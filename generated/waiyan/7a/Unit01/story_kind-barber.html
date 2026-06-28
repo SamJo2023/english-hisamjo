@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>理发师的善意 — 善良的理发师</title>
+  <style>
+    /* ===== Base reset ===== */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ===== Theme variables (set by theme_class on body) =====
+       注意：浅色主题用深色 hero 文字 + 深色装饰；深色主题用白字 + 浅色装饰。 */
+    body.theme-chocolate {
+      --bg: #fef3e8;
+      --bg-gradient: linear-gradient(135deg, #d4a574 0%, #b8651b 50%, #8b4513 100%);
+      --bg-card: #fffaf2;
+      --text: #3a2a1a;
+      --subtle: #8a7560;
+      --accent: #b8651b;
+      --accent-dark: #8b4513;
+      --highlight: #ffd68a;
+      --border: #e8c896;
+      --hero-text: #fff8e8;
+      --hero-text-shadow: 0 2px 8px rgba(60,30,10,0.35);
+      --hero-deco: rgba(255,255,255,0.15);
+      --hero-stat-bg: rgba(255,255,255,0.22);
+      --hero-stat-text: #fff8e8;
+    }
+    body.theme-barber {
+      --bg: #e8f5f3;
+      --bg-gradient: linear-gradient(135deg, #5fb89f 0%, #2d8a7a 50%, #1a5a4f 100%);
+      --bg-card: #f5fbf9;
+      --text: #1a3a35;
+      --subtle: #5a7a75;
+      --accent: #2d8a7a;
+      --accent-dark: #1a5a4f;
+      --highlight: #b3e8d8;
+      --border: #9bd4c4;
+      --hero-text: #f0fdf9;
+      --hero-text-shadow: 0 2px 8px rgba(20,50,40,0.35);
+      --hero-deco: rgba(255,255,255,0.18);
+      --hero-stat-bg: rgba(255,255,255,0.22);
+      --hero-stat-text: #f0fdf9;
+    }
+    body.theme-mystery {
+      --bg: #1e2a3a;
+      --bg-gradient: linear-gradient(135deg, #1e2a3a 0%, #2a3a52 50%, #4a5d7e 100%);
+      --bg-card: #2a3a52;
+      --text: #e8edf5;
+      --subtle: #8da4c1;
+      --accent: #6ba4f5;
+      --accent-dark: #5b8def;
+      --highlight: #3a4d6e;
+      --border: #3a4d6e;
+      --hero-text: #fff;
+      --hero-text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      --hero-deco: rgba(255,255,255,0.15);
+      --hero-stat-bg: rgba(255,255,255,0.2);
+      --hero-stat-text: #fff;
+    }
+    body.theme-winter {
+      --bg: #f0f5fa;
+      --bg-gradient: linear-gradient(135deg, #8cb4d8 0%, #4a6b8a 50%, #2a4b6a 100%);
+      --bg-card: #f8fbfd;
+      --text: #2a3a4a;
+      --subtle: #6a7a8a;
+      --accent: #4a6b8a;
+      --accent-dark: #2a4b6a;
+      --highlight: #c4dff5;
+      --border: #b4d4ed;
+      --hero-text: #f0f5fa;
+      --hero-text-shadow: 0 2px 8px rgba(20,40,60,0.35);
+      --hero-deco: rgba(255,255,255,0.2);
+      --hero-stat-bg: rgba(255,255,255,0.25);
+      --hero-stat-text: #f0f5fa;
+    }
+
+    body {
+      font-family: "Nunito", "PingFang SC", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding-bottom: 120px;
+      transition: background 0.4s;
+    }
+
+    /* ===== Hero / Cover ===== */
+    .hero {
+      background: var(--bg-gradient);
+      color: var(--hero-text);
+      padding: 36px 24px 28px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .hero::before, .hero::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background: var(--hero-deco);
+      pointer-events: none;
+    }
+    .hero::before {
+      width: 200px; height: 200px;
+      top: -80px; right: -60px;
+    }
+    .hero::after {
+      width: 120px; height: 120px;
+      bottom: -40px; left: 30%;
+    }
+    .back-link {
+      display: inline-block;
+      color: var(--hero-text);
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
+    .back-link:hover { opacity: 1; text-decoration: underline; }
+    .hero-content { position: relative; z-index: 2; }
+    .hero-title-en {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 6px;
+      text-shadow: var(--hero-text-shadow);
+    }
+    .hero-title-zh {
+      font-size: 17px;
+      opacity: 0.95;
+      margin-bottom: 12px;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      opacity: 0.9;
+      flex-wrap: wrap;
+    }
+    .hero-stat {
+      background: var(--hero-stat-bg);
+      color: var(--hero-stat-text);
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 20px;
+    }
+
+    /* ===== View tabs ===== */
+    .view-tabs {
+      display: flex;
+      gap: 4px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 4px;
+      margin-bottom: 20px;
+    }
+    .view-tab {
+      flex: 1;
+      padding: 10px 12px;
+      border: none;
+      background: transparent;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--subtle);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .view-tab.active {
+      background: var(--accent);
+      color: white;
+    }
+    .view-tab:not(.active):hover {
+      background: var(--highlight);
+      color: var(--text);
+    }
+
+    /* ===== Story content ===== */
+    .story-section { display: none; }
+    .story-section.active { display: block; }
+
+    .sentence {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-left: 4px solid transparent;
+    }
+    .sentence:hover {
+      transform: translateX(2px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .sentence.playing {
+      background: var(--highlight);
+      border-left-color: var(--accent);
+      transform: translateX(4px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .sent-badge {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sentence.playing .sent-badge {
+      background: var(--accent-dark);
+      animation: pulse 1.2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 var(--accent); }
+      50% { transform: scale(1.1); box-shadow: 0 0 0 6px rgba(184, 101, 27, 0.2); }
+    }
+    .sent-content { flex: 1; min-width: 0; }
+    .sent-en, .sent-zh {
+      font-size: 18px;
+      display: inline;  /* 默认 EN/ZH 视图：横向排列 */
+    }
+    .sent-en { color: var(--text); }
+    .sent-zh {
+      color: var(--subtle);
+      font-size: 16px;
+      margin-top: 4px;
+    }
+    /* 对照视图：英文和中文各占一行，中间加虚线分隔 */
+    .bilingual-section .sent-en {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+    .bilingual-section .sent-zh {
+      display: block;
+      border-top: 1px dashed var(--border);
+      padding-top: 10px;
+      margin-top: 4px;
+      font-size: 15px;
+      color: var(--subtle);
+    }
+
+    /* ===== Clickable words（同时是"需要练习的生词"）===== */
+    .word {
+      cursor: pointer;
+      font-weight: 700;          /* 加粗 — 强化练习目标 */
+      color: var(--accent-dark); /* 略深色（与正文略区分，不抢戏） */
+      border-bottom: 2px dotted transparent;
+      transition: all 0.1s;
+      padding: 0 1px;
+    }
+    .word:hover {
+      background: var(--highlight);
+      border-bottom-color: var(--accent);
+    }
+    /* mystery 主题用浅 accent，word 颜色要调亮 */
+    body.theme-mystery .word { color: var(--accent); }
+
+    /* ===== Word popup ===== */
+    #word-popup {
+      position: fixed;
+      background: var(--bg-card);
+      border: 2px solid var(--accent);
+      border-radius: 12px;
+      padding: 18px;
+      min-width: 240px;
+      max-width: 320px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+      z-index: 1000;
+      display: none;
+      animation: popIn 0.15s ease-out;
+    }
+    @keyframes popIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    #word-popup.show { display: block; }
+    .popup-lemma {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .popup-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+    .popup-audio {
+      flex-shrink: 0;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.1s;
+    }
+    .popup-audio:hover { transform: scale(1.1); }
+    .popup-audio:active { transform: scale(0.95); }
+    .popup-phonetic {
+      font-size: 13px;
+      color: var(--subtle);
+      margin-bottom: 8px;
+      font-family: "Lucida Sans Unicode", "Arial Unicode MS", serif;
+    }
+    .popup-pos {
+      display: inline-block;
+      background: var(--highlight);
+      color: var(--accent-dark);
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 6px;
+      margin-right: 6px;
+      font-weight: 600;
+    }
+    .popup-zh {
+      font-size: 17px;
+      color: var(--text);
+      margin: 10px 0 6px;
+      font-weight: 500;
+    }
+    .popup-example {
+      font-size: 12px;
+      color: var(--subtle);
+      font-style: italic;
+      border-top: 1px solid var(--border);
+      padding-top: 8px;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    /* ===== Audio bar ===== */
+    .audio-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--bg-card);
+      border-top: 2px solid var(--accent);
+      padding: 14px 16px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+    .audio-controls {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .audio-btn {
+      width: 44px;
+      height: 44px;
+      border: none;
+      background: var(--accent);
+      color: white;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .audio-btn.secondary {
+      background: var(--bg);
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+    .audio-btn:hover {
+      transform: scale(1.05);
+    }
+    .audio-btn.play {
+      width: 56px;
+      height: 56px;
+      font-size: 22px;
+    }
+    .audio-progress {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--subtle);
+    }
+    .audio-progress-bar {
+      flex: 1;
+      height: 6px;
+      background: var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .audio-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
+      width: 0%;
+      transition: width 0.3s;
+    }
+    .speed-select {
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      border-radius: 8px;
+      padding: 6px 8px;
+      font-size: 13px;
+      cursor: pointer;
+      color: var(--text);
+    }
+    .play-all-btn {
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: white;
+      border-radius: 16px;
+      padding: 6px 14px;
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 28px 16px 24px; }
+      .hero-title-en { font-size: 22px; }
+      .hero-title-zh { font-size: 15px; }
+      .sent-en { font-size: 16px; }
+      .sent-zh { font-size: 14px; }
+      .container { padding: 16px 12px; }
+      .audio-btn { width: 40px; height: 40px; }
+      .audio-btn.play { width: 50px; height: 50px; }
+    }
+  </style>
+</head>
+<body class="theme-barber">
+  <header class="hero">
+    <a class="back-link" href="index.html">← 返回单元列表</a>
+    <div class="hero-content">
+      <div class="hero-title-en">The Barber's Kindness</div>
+      <div class="hero-title-zh">理发师的善意</div>
+      <div class="hero-stats">
+        <span class="hero-stat">📖 10 句</span>
+        <span class="hero-stat">📚 11 词</span>
+        <span class="hero-stat">🎙 天心小灵</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="view-tabs">
+      <button class="view-tab active" data-mode="en">English</button>
+      <button class="view-tab" data-mode="zh">中文</button>
+      <button class="view-tab" data-mode="bilingual">对照</button>
+    </div>
+
+    <main>
+      <section class="story-section en-section active" data-mode="en">
+        <div class="sentence" data-sent="s01"><span class="sent-badge">1</span><span class="sent-content"><span class="sent-en">Serveran the Magician walked through a dusty village market and found an old <span class="word" data-lemma="barber">barber</span> sitting alone among stalls selling <span class="word" data-lemma="cabbage">cabbage</span>.</span></span></div>
+        <div class="sentence" data-sent="s02"><span class="sent-badge">2</span><span class="sent-content"><span class="sent-en">The <span class="word" data-lemma="barber">barber's</span> wife had died from <span class="word" data-lemma="cancer">cancer</span>, but he still opened his shop every morning.</span></span></div>
+        <div class="sentence" data-sent="s03"><span class="sent-badge">3</span><span class="sent-content"><span class="sent-en">"I give free haircuts and <span class="word" data-lemma="wig">wigs</span> to poor children now," the <span class="word" data-lemma="barber">barber</span> said in a quiet <span class="word" data-lemma="voice">voice</span>.</span></span></div>
+        <div class="sentence" data-sent="s04"><span class="sent-badge">4</span><span class="sent-content"><span class="sent-en">Serveran watched as the <span class="word" data-lemma="barber">barber</span> trimmed hair with steady hands and made colorful <span class="word" data-lemma="wig">wigs</span> for village girls.</span></span></div>
+        <div class="sentence" data-sent="s05"><span class="sent-badge">5</span><span class="sent-content"><span class="sent-en">A little girl entered, hiding her face because she felt <span class="word" data-lemma="shame">shame</span> about her bald spots.</span></span></div>
+        <div class="sentence" data-sent="s06"><span class="sent-badge">6</span><span class="sent-content"><span class="sent-en">The kind <span class="word" data-lemma="barber">barber</span> patted his <span class="word" data-lemma="shoulder">shoulder</span> and said, "Come sit here, dear, let me help you feel <span class="word" data-lemma="smart">smart</span> again."</span></span></div>
+        <div class="sentence" data-sent="s07"><span class="sent-badge">7</span><span class="sent-content"><span class="sent-en">He gently cut her tangled hair with old <span class="word" data-lemma="scissors">scissors</span> and placed a beautiful <span class="word" data-lemma="wig">wig</span> on her head.</span></span></div>
+        <div class="sentence" data-sent="s08"><span class="sent-badge">8</span><span class="sent-content"><span class="sent-en">He then put a bright <span class="word" data-lemma="hat">hat</span> on her and smiled warmly at her reflection in the mirror.</span></span></div>
+        <div class="sentence" data-sent="s09"><span class="sent-badge">9</span><span class="sent-content"><span class="sent-en">The girl looked at herself and her eyes filled with happy tears as she remembered her last warm <span class="word" data-lemma="bath">bath</span> days.</span></span></div>
+        <div class="sentence" data-sent="s10"><span class="sent-badge">10</span><span class="sent-content"><span class="sent-en">Serveran learned that day that true courage means turning pain into kindness for others.</span></span></div>
+      </section>
+      <section class="story-section zh-section" data-mode="zh">
+        <div class="sentence" data-sent="s01"><span class="sent-badge">1</span><span class="sent-content"><span class="sent-zh">魔术师塞维兰走过尘土飞扬的村市场,发现一位老理发师独自坐在卖白菜的摊位旁。</span></span></div>
+        <div class="sentence" data-sent="s02"><span class="sent-badge">2</span><span class="sent-content"><span class="sent-zh">理发师的妻子死于癌症,但他每天早上仍然开门营业。</span></span></div>
+        <div class="sentence" data-sent="s03"><span class="sent-badge">3</span><span class="sent-content"><span class="sent-zh">"现在我给穷孩子免费理发和做假发,"理发师轻声说道。</span></span></div>
+        <div class="sentence" data-sent="s04"><span class="sent-badge">4</span><span class="sent-content"><span class="sent-zh">塞维兰看着理发师用稳定的手修剪头发,为村里的小女孩制作彩色假发。</span></span></div>
+        <div class="sentence" data-sent="s05"><span class="sent-badge">5</span><span class="sent-content"><span class="sent-zh">一个小女孩走了进来,遮住自己的脸,因为她为自己的秃斑感到羞耻。</span></span></div>
+        <div class="sentence" data-sent="s06"><span class="sent-badge">6</span><span class="sent-content"><span class="sent-zh">善良的理发师拍拍自己的肩膀说:"来这里坐下,亲爱的,让我帮你重新变得漂亮。"</span></span></div>
+        <div class="sentence" data-sent="s07"><span class="sent-badge">7</span><span class="sent-content"><span class="sent-zh">他用旧剪刀轻轻剪掉她缠结的头发,然后把一顶美丽的假发戴在她头上。</span></span></div>
+        <div class="sentence" data-sent="s08"><span class="sent-badge">8</span><span class="sent-content"><span class="sent-zh">然后他给她戴上一顶鲜艳的帽子,温暖地对着镜子里的她微笑。</span></span></div>
+        <div class="sentence" data-sent="s09"><span class="sent-badge">9</span><span class="sent-content"><span class="sent-zh">女孩看着自己,眼里充满了幸福的泪水,她想起了上次洗热水澡的日子。</span></span></div>
+        <div class="sentence" data-sent="s10"><span class="sent-badge">10</span><span class="sent-content"><span class="sent-zh">那天塞维兰明白,真正的勇气意味着把痛苦转化为对他人的善意。</span></span></div>
+      </section>
+      <section class="story-section bilingual-section" data-mode="bilingual">
+        <div class="sentence" data-sent="s01"><span class="sent-badge">1</span><span class="sent-content"><span class="sent-en">Serveran the Magician walked through a dusty village market and found an old <span class="word" data-lemma="barber">barber</span> sitting alone among stalls selling <span class="word" data-lemma="cabbage">cabbage</span>.</span><span class="sent-zh">魔术师塞维兰走过尘土飞扬的村市场,发现一位老理发师独自坐在卖白菜的摊位旁。</span></span></div>
+        <div class="sentence" data-sent="s02"><span class="sent-badge">2</span><span class="sent-content"><span class="sent-en">The <span class="word" data-lemma="barber">barber's</span> wife had died from <span class="word" data-lemma="cancer">cancer</span>, but he still opened his shop every morning.</span><span class="sent-zh">理发师的妻子死于癌症,但他每天早上仍然开门营业。</span></span></div>
+        <div class="sentence" data-sent="s03"><span class="sent-badge">3</span><span class="sent-content"><span class="sent-en">"I give free haircuts and <span class="word" data-lemma="wig">wigs</span> to poor children now," the <span class="word" data-lemma="barber">barber</span> said in a quiet <span class="word" data-lemma="voice">voice</span>.</span><span class="sent-zh">"现在我给穷孩子免费理发和做假发,"理发师轻声说道。</span></span></div>
+        <div class="sentence" data-sent="s04"><span class="sent-badge">4</span><span class="sent-content"><span class="sent-en">Serveran watched as the <span class="word" data-lemma="barber">barber</span> trimmed hair with steady hands and made colorful <span class="word" data-lemma="wig">wigs</span> for village girls.</span><span class="sent-zh">塞维兰看着理发师用稳定的手修剪头发,为村里的小女孩制作彩色假发。</span></span></div>
+        <div class="sentence" data-sent="s05"><span class="sent-badge">5</span><span class="sent-content"><span class="sent-en">A little girl entered, hiding her face because she felt <span class="word" data-lemma="shame">shame</span> about her bald spots.</span><span class="sent-zh">一个小女孩走了进来,遮住自己的脸,因为她为自己的秃斑感到羞耻。</span></span></div>
+        <div class="sentence" data-sent="s06"><span class="sent-badge">6</span><span class="sent-content"><span class="sent-en">The kind <span class="word" data-lemma="barber">barber</span> patted his <span class="word" data-lemma="shoulder">shoulder</span> and said, "Come sit here, dear, let me help you feel <span class="word" data-lemma="smart">smart</span> again."</span><span class="sent-zh">善良的理发师拍拍自己的肩膀说:"来这里坐下,亲爱的,让我帮你重新变得漂亮。"</span></span></div>
+        <div class="sentence" data-sent="s07"><span class="sent-badge">7</span><span class="sent-content"><span class="sent-en">He gently cut her tangled hair with old <span class="word" data-lemma="scissors">scissors</span> and placed a beautiful <span class="word" data-lemma="wig">wig</span> on her head.</span><span class="sent-zh">他用旧剪刀轻轻剪掉她缠结的头发,然后把一顶美丽的假发戴在她头上。</span></span></div>
+        <div class="sentence" data-sent="s08"><span class="sent-badge">8</span><span class="sent-content"><span class="sent-en">He then put a bright <span class="word" data-lemma="hat">hat</span> on her and smiled warmly at her reflection in the mirror.</span><span class="sent-zh">然后他给她戴上一顶鲜艳的帽子,温暖地对着镜子里的她微笑。</span></span></div>
+        <div class="sentence" data-sent="s09"><span class="sent-badge">9</span><span class="sent-content"><span class="sent-en">The girl looked at herself and her eyes filled with happy tears as she remembered her last warm <span class="word" data-lemma="bath">bath</span> days.</span><span class="sent-zh">女孩看着自己,眼里充满了幸福的泪水,她想起了上次洗热水澡的日子。</span></span></div>
+        <div class="sentence" data-sent="s10"><span class="sent-badge">10</span><span class="sent-content"><span class="sent-en">Serveran learned that day that true courage means turning pain into kindness for others.</span><span class="sent-zh">那天塞维兰明白,真正的勇气意味着把痛苦转化为对他人的善意。</span></span></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="word-popup" role="dialog" aria-label="word definition">
+    <div class="popup-header">
+      <div class="popup-lemma" id="popup-lemma"></div>
+      <button class="popup-audio" id="popup-audio-word" title="听单词发音（天心小灵）">🔊</button>
+    </div>
+    <div class="popup-phonetic" id="popup-phonetic"></div>
+    <div><span class="popup-pos" id="popup-pos"></span></div>
+    <div class="popup-zh" id="popup-zh"></div>
+    <div class="popup-example" id="popup-example"></div>
+  </div>
+
+  <div class="audio-bar">
+    <div class="audio-controls">
+      <button class="audio-btn secondary" id="btn-prev" title="上一句 (J/←)">⏮</button>
+      <button class="audio-btn play" id="btn-play" title="播放/暂停 (Space) - 自动连播">▶</button>
+      <button class="audio-btn secondary" id="btn-next" title="下一句 (K/→)">⏭</button>
+      <div class="audio-progress">
+        <span id="sent-label">s01 / 10</span>
+        <div class="audio-progress-bar" id="progress-bar"><div class="audio-progress-fill" id="progress-fill"></div></div>
+      </div>
+      <select class="speed-select" id="speed-select" title="语速">
+        <option value="0.7">0.7×</option>
+        <option value="1.0" selected>1.0×</option>
+        <option value="1.2">1.2×</option>
+      </select>
+    </div>
+  </div>
+
+  <script>
+    const STORY = {"title_en": "The Barber's Kindness", "title_zh": "理发师的善意", "sentences": [{"id": "s01", "en": "Serveran the Magician walked through a dusty village market and found an old barber sitting alone among stalls selling cabbage.", "zh": "魔术师塞维兰走过尘土飞扬的村市场,发现一位老理发师独自坐在卖白菜的摊位旁。"}, {"id": "s02", "en": "The barber's wife had died from cancer, but he still opened his shop every morning.", "zh": "理发师的妻子死于癌症,但他每天早上仍然开门营业。"}, {"id": "s03", "en": "\"I give free haircuts and wigs to poor children now,\" the barber said in a quiet voice.", "zh": "\"现在我给穷孩子免费理发和做假发,\"理发师轻声说道。"}, {"id": "s04", "en": "Serveran watched as the barber trimmed hair with steady hands and made colorful wigs for village girls.", "zh": "塞维兰看着理发师用稳定的手修剪头发,为村里的小女孩制作彩色假发。"}, {"id": "s05", "en": "A little girl entered, hiding her face because she felt shame about her bald spots.", "zh": "一个小女孩走了进来,遮住自己的脸,因为她为自己的秃斑感到羞耻。"}, {"id": "s06", "en": "The kind barber patted his shoulder and said, \"Come sit here, dear, let me help you feel smart again.\"", "zh": "善良的理发师拍拍自己的肩膀说:\"来这里坐下,亲爱的,让我帮你重新变得漂亮。\""}, {"id": "s07", "en": "He gently cut her tangled hair with old scissors and placed a beautiful wig on her head.", "zh": "他用旧剪刀轻轻剪掉她缠结的头发,然后把一顶美丽的假发戴在她头上。"}, {"id": "s08", "en": "He then put a bright hat on her and smiled warmly at her reflection in the mirror.", "zh": "然后他给她戴上一顶鲜艳的帽子,温暖地对着镜子里的她微笑。"}, {"id": "s09", "en": "The girl looked at herself and her eyes filled with happy tears as she remembered her last warm bath days.", "zh": "女孩看着自己,眼里充满了幸福的泪水,她想起了上次洗热水澡的日子。"}, {"id": "s10", "en": "Serveran learned that day that true courage means turning pain into kindness for others.", "zh": "那天塞维兰明白,真正的勇气意味着把痛苦转化为对他人的善意。"}], "_meta": {"theme_id": "kind-barber", "theme_name_zh": "善良的理发师", "theme_name_en": "The Kind Barber", "is_review": false, "vocab_sha256": "", "generated_at": "2026-06-28T07:56:23.128769+00:00", "regeneration_count": 1, "coverage": {"total": 11, "covered": 11, "missing": []}}, "schema_version": 1};
+    const VOCAB = [{"lemma": "cabbage", "pos": "n.", "gloss_zh": "卷心菜，洋白菜，甘蓝", "phonetic_uk": "'kæbɪdʒ", "phonetic_us": "'kæbɪdʒ", "page": 5, "is_phrase": false, "accept_forms": []}, {"lemma": "bath", "pos": "v.", "gloss_zh": "给……洗澡", "phonetic_uk": "bɑːθ", "phonetic_us": "bɑːθ", "page": 7, "is_phrase": false, "accept_forms": []}, {"lemma": "hat", "pos": "n.", "gloss_zh": "帽子", "phonetic_uk": "hæt", "phonetic_us": "hæt", "page": 12, "is_phrase": false, "accept_forms": []}, {"lemma": "voice", "pos": "n.", "gloss_zh": "说话声，嗓音；发声能力", "phonetic_uk": "voɪs", "phonetic_us": "voɪs", "page": 12, "is_phrase": false, "accept_forms": []}, {"lemma": "shame", "pos": "n.", "gloss_zh": "羞愧，羞耻，惭愧", "phonetic_uk": "ʃeɪm", "phonetic_us": "ʃeɪm", "page": 12, "is_phrase": false, "accept_forms": []}, {"lemma": "barber", "pos": "n.", "gloss_zh": "男理发师", "phonetic_uk": "ˈbɑːbə", "phonetic_us": "ˈbɑːbə", "page": 12, "is_phrase": false, "accept_forms": []}, {"lemma": "shoulder", "pos": "n.", "gloss_zh": "肩膀", "phonetic_uk": "ˈʃʊʊldə", "phonetic_us": "ˈʃʊʊldə", "page": 12, "is_phrase": false, "accept_forms": []}, {"lemma": "scissors", "pos": "n.", "gloss_zh": "剪刀", "phonetic_uk": "ˈsɪzəz", "phonetic_us": "ˈsɪzəz", "page": 12, "is_phrase": false, "accept_forms": []}, {"lemma": "cancer", "pos": "n.", "gloss_zh": "癌（症）", "phonetic_uk": "ˈkænsə", "phonetic_us": "ˈkænsə", "page": 13, "is_phrase": false, "accept_forms": []}, {"lemma": "wig", "pos": "n.", "gloss_zh": "假发", "phonetic_uk": "wɪg", "phonetic_us": "wɪg", "page": 13, "is_phrase": false, "accept_forms": []}, {"lemma": "smart", "pos": "adj.", "gloss_zh": "聪颖的，机灵的；明智的", "phonetic_uk": "smɑːt", "phonetic_us": "smɑːt", "page": 13, "is_phrase": false, "accept_forms": []}];
+    const AUDIO_BASE = "audio/kind-barber/";
+    const WORD_AUDIO_BASE = "../../../../data/word_audio/";
+
+    const vocabMap = {};
+    VOCAB.forEach(w => {
+      vocabMap[w.lemma] = w;
+      if (w.lemma.includes(' ')) {
+        const firstWord = w.lemma.split(' ')[0];
+        if (!vocabMap[firstWord]) vocabMap[firstWord] = w;
+      }
+    });
+
+    const state = {
+      mode: 'en',
+      currentSentence: STORY.sentences[0]?.id || 's01',
+      audio: null,
+      playing: false,
+      speed: 1.0,
+      autoAdvance: true,  // ▶ 按钮默认连播
+    };
+
+    // ---- View mode ----
+    document.querySelectorAll('.view-tab').forEach(tab => {
+      tab.addEventListener('click', () => setMode(tab.dataset.mode));
+    });
+    function setMode(mode) {
+      state.mode = mode;
+      document.querySelectorAll('.view-tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.mode === mode);
+      });
+      document.querySelectorAll('.story-section').forEach(s => {
+        s.classList.toggle('active', s.dataset.mode === mode);
+      });
+    }
+
+    // ---- Sentence click → 单句播放（不连播，方便重复听一句） ----
+    document.querySelectorAll('.sentence').forEach(el => {
+      el.addEventListener('click', (e) => {
+        // 如果点的是 word 元素，不触发句子播放（让 word handler 处理）
+        if (e.target.closest('.word')) return;
+        playSentence(el.dataset.sent, false);
+      });
+    });
+
+    // ---- Word click → popup（直接绑在每个 .word 上，不依赖 document 冒泡） ----
+    document.querySelectorAll('.word').forEach(wordEl => {
+      wordEl.addEventListener('click', (e) => {
+        e.stopPropagation();        // 阻止冒泡到 .sentence
+        e.preventDefault();
+        showWordPopup(wordEl, e);
+      });
+    });
+
+    // ---- Document click → 点外部时关掉 popup ----
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('.word') || e.target.closest('#word-popup')) return;
+      const popup = document.getElementById('word-popup');
+      if (popup) popup.classList.remove('show');
+    });
+
+    // ---- 滚动时关掉 popup（避免弹窗与单词位置脱节） ----
+    function closePopup() {
+      const popup = document.getElementById('word-popup');
+      if (popup) popup.classList.remove('show');
+    }
+    window.addEventListener('scroll', closePopup, { passive: true });
+    window.addEventListener('touchmove', closePopup, { passive: true });
+    window.addEventListener('wheel', closePopup, { passive: true });
+    function showWordPopup(wordEl, e) {
+      const lemma = wordEl.dataset.lemma;
+      const info = vocabMap[lemma];
+      const popup = document.getElementById('word-popup');
+      if (!info) { popup.classList.remove('show'); return; }
+      document.getElementById('popup-lemma').textContent = info.lemma;
+      document.getElementById('popup-phonetic').textContent = info.phonetic_uk || info.phonetic_us || '';
+      document.getElementById('popup-pos').textContent = info.pos || '';
+      document.getElementById('popup-zh').textContent = info.gloss_zh || '';
+      const ex = STORY.sentences.find(s => new RegExp('\\\\b' + lemma.split(' ')[0] + '\\\\b', 'i').test(s.en));
+      document.getElementById('popup-example').textContent = ex ? '例：' + ex.en : '';
+      // 配 单词音频 按钮
+      const wordAudioBtn = document.getElementById('popup-audio-word');
+      wordAudioBtn.onclick = (ev) => {
+        ev.stopPropagation();
+        playWordAudio(info.lemma);
+      };
+
+      // 点单词时暂停当前句子播放（让用户专注听单词）
+      if (state.audio) {
+        state.audio.pause();
+        state.playing = false;
+        updatePlayButton();
+      }
+
+      // 智能定位：先临时显示测尺寸，再决定上下
+      popup.style.visibility = 'hidden';
+      popup.classList.add('show');
+      const popupW = popup.offsetWidth || 280;
+      const popupH = popup.offsetHeight || 200;
+      popup.classList.remove('show');
+      popup.style.visibility = '';
+
+      // position: fixed 用 viewport 坐标（不加 scrollY）
+      const rect = wordEl.getBoundingClientRect();
+      const margin = 10;
+      // 优先放单词上方
+      let top = rect.top - popupH - margin;
+      if (top < margin) {  // 放不下就放下面
+        top = rect.bottom + margin;
+      }
+      // 限制在视口内
+      if (top + popupH > window.innerHeight - margin) {
+        top = window.innerHeight - popupH - margin;
+      }
+      if (top < margin) top = margin;
+
+      let left = rect.left;
+      if (left + popupW > window.innerWidth - margin) {
+        left = window.innerWidth - popupW - margin;
+      }
+      if (left < margin) left = margin;
+
+      popup.style.left = left + 'px';
+      popup.style.top = top + 'px';
+      popup.classList.add('show');
+    }
+
+    function playWordAudio(lemma) {
+      // 优先用预生成的 mmx mp3（天心小灵声音）
+      const safe = lemma.replace(/[\/\s']/g, '_');
+      const url = WORD_AUDIO_BASE + safe + '.mp3';
+      const audio = new Audio(url);
+      audio.playbackRate = state.speed;
+      audio.play().catch(err => {
+        // 兜底：用浏览器 Web Speech API
+        if ('speechSynthesis' in window) {
+          speechSynthesis.cancel();
+          const u = new SpeechSynthesisUtterance(lemma);
+          u.lang = 'en-US';
+          u.rate = 0.85;
+          speechSynthesis.speak(u);
+        } else {
+          console.warn('No audio available');
+        }
+      });
+    }
+
+    // ---- Audio playback ----
+    function playSentence(sentId, autoAdvance = true) {
+      state.currentSentence = sentId;
+      state.autoAdvance = autoAdvance;
+      highlightSentence(sentId);
+      if (state.audio) { state.audio.pause(); state.audio = null; }
+      const url = AUDIO_BASE + 'sent-' + sentId.replace('s','') + '.mp3';
+      const audio = new Audio(url);
+      audio.playbackRate = state.speed;
+      audio.addEventListener('ended', onSentenceEnded);
+      audio.addEventListener('error', onAudioError);
+      audio.play().catch(err => console.warn('Audio play failed:', err));
+      state.audio = audio;
+      state.playing = true;
+      updatePlayButton();
+      updateProgress();
+    }
+    function onSentenceEnded() {
+      if (state.autoAdvance) {
+        const curIdx = STORY.sentences.findIndex(s => s.id === state.currentSentence);
+        if (curIdx < STORY.sentences.length - 1) {
+          playSentence(STORY.sentences[curIdx + 1].id, true);
+        } else {
+          state.playing = false;
+          updatePlayButton();
+        }
+      } else {
+        state.playing = false;
+        updatePlayButton();
+      }
+    }
+    function onAudioError() { state.playing = false; updatePlayButton(); }
+    function highlightSentence(sentId) {
+      document.querySelectorAll('.sentence').forEach(el => {
+        el.classList.toggle('playing', el.dataset.sent === sentId);
+      });
+      const el = document.querySelector('.sentence[data-sent="' + sentId + '"]');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    function updatePlayButton() {
+      document.getElementById('btn-play').textContent = state.playing ? '⏸' : '▶';
+    }
+    function updateProgress() {
+      const cur = STORY.sentences.findIndex(s => s.id === state.currentSentence) + 1;
+      const total = STORY.sentences.length;
+      document.getElementById('sent-label').textContent = 's' + String(cur).padStart(2,'0') + ' / ' + String(total).padStart(2,'0');
+      document.getElementById('progress-fill').style.width = (cur / total * 100) + '%';
+    }
+    // 点击进度条跳转
+    document.getElementById('progress-bar').addEventListener('click', e => {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const pct = (e.clientX - rect.left) / rect.width;
+      const idx = Math.min(STORY.sentences.length - 1, Math.floor(pct * STORY.sentences.length));
+      playSentence(STORY.sentences[idx].id, state.autoAdvance);
+    });
+    function prevSentence() {
+      const curIdx = STORY.sentences.findIndex(s => s.id === state.currentSentence);
+      if (curIdx > 0) playSentence(STORY.sentences[curIdx - 1].id, state.autoAdvance);
+    }
+    function nextSentence() {
+      const curIdx = STORY.sentences.findIndex(s => s.id === state.currentSentence);
+      if (curIdx < STORY.sentences.length - 1) playSentence(STORY.sentences[curIdx + 1].id, state.autoAdvance);
+    }
+    function togglePlay() {
+      if (state.playing) {
+        if (state.audio) state.audio.pause();
+        state.playing = false;
+      } else {
+        // 主播放按钮 = 连播模式
+        playSentence(state.currentSentence, true);
+      }
+      updatePlayButton();
+    }
+
+    document.getElementById('btn-prev').addEventListener('click', prevSentence);
+    document.getElementById('btn-next').addEventListener('click', nextSentence);
+    document.getElementById('btn-play').addEventListener('click', togglePlay);
+    document.getElementById('speed-select').addEventListener('change', e => {
+      state.speed = parseFloat(e.target.value);
+      if (state.audio) state.audio.playbackRate = state.speed;
+    });
+
+    // ---- Keyboard ----
+    document.addEventListener('keydown', e => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+      if (e.code === 'Space') { e.preventDefault(); togglePlay(); }
+      else if (e.code === 'KeyJ' || e.code === 'ArrowLeft') { e.preventDefault(); prevSentence(); }
+      else if (e.code === 'KeyK' || e.code === 'ArrowRight') { e.preventDefault(); nextSentence(); }
+      else if (e.code === 'KeyF') { e.preventDefault(); setMode(state.mode === 'en' ? 'zh' : state.mode === 'zh' ? 'bilingual' : 'en'); }
+    });
+
+    updateProgress();
+    highlightSentence(state.currentSentence);
+  </script>
+</body>
+</html>

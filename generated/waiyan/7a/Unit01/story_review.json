@@ -1,0 +1,61 @@
+{
+  "title_en": "A Strange Winter Day",
+  "title_zh": "一个奇异的冬日",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Emma Woods woke to a freezing, sunless morning, the sky gray as ash.",
+      "zh": "艾玛·伍兹醒来时,天寒地冻,天空阴沉沉的,灰得像灰烬。"
+    },
+    {
+      "id": "s02",
+      "en": "A princess from a distant kingdom had taken shelter at the manor during the strange winter.",
+      "zh": "一位来自遥远国度的公主在这个奇异的冬天里来到庄园避寒。"
+    },
+    {
+      "id": "s03",
+      "en": "They lit candles and began to play chess by the frosted window.",
+      "zh": "她们点燃蜡烛,在结霜的窗边下起了国际象棋。"
+    },
+    {
+      "id": "s04",
+      "en": "\"Your moves are clever,\" the princess whispered, her breath visible in the cold air.",
+      "zh": "\"你的棋步真巧妙,\"公主轻声说道,她的呼吸在冷空气中清晰可见。"
+    },
+    {
+      "id": "s05",
+      "en": "Emma poured two cups of watery soup, hoping the warmth would lift their spirits.",
+      "zh": "艾玛倒了两杯稀薄的汤,希望温暖能提振她们的精神。"
+    },
+    {
+      "id": "s06",
+      "en": "The soup tasted thin, but the princess smiled anyway, grateful for the company.",
+      "zh": "汤尝起来味道很淡,但公主还是微笑着,感激有她作伴。"
+    },
+    {
+      "id": "s07",
+      "en": "Outside, snow piled high against the walls while they waited for spring to arrive.",
+      "zh": "外面,雪在墙边堆积如山,而她们等待着春天的到来。"
+    },
+    {
+      "id": "s08",
+      "en": "\"Spring will come,\" Emma said softly, \"and so will the sun again.\"",
+      "zh": "\"春天会来的,\"艾玛轻声说,\"太阳也会再升起的。\""
+    }
+  ],
+  "_meta": {
+    "theme_id": "harsh-winter",
+    "theme_name_zh": "一个奇异的冬日",
+    "theme_name_en": "A Strange Winter Day",
+    "is_review": true,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-28T08:00:43.455902+00:00",
+    "regeneration_count": 0,
+    "coverage": {
+      "total": 5,
+      "covered": 5,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

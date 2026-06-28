@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+pipeline.log
+
+# Local configs
+.env
+.env.local
+*.local
+
+# Vercel
+.vercel/
+
+# Don't ignore generated audio/HTML (they're deployed)
+# But ignore temp files in generated/
+generated/**/*.tmp
+generated/**/*.partial

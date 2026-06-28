@@ -1,0 +1,91 @@
+{
+  "title_en": "The Magical Chocolate Factory",
+  "title_zh": "神奇的巧克力工厂",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Doctor Emily Dyer arrived in the small town and smelled sweet chocolate everywhere.",
+      "zh": "艾米莉·戴尔医生来到这个小镇,到处都能闻到甜美的巧克力味。"
+    },
+    {
+      "id": "s02",
+      "en": "Kreacher Pierson owned a magical factory that made the most wonderful chocolate in the world.",
+      "zh": "克雷彻·皮尔森拥有一家奇妙的工厂,生产世界上最好吃的巧克力。"
+    },
+    {
+      "id": "s03",
+      "en": "\"Welcome to my factory!\" Kreacher said with a warm smile.",
+      "zh": "\"欢迎来到我的工厂!\"克雷彻微笑着说。"
+    },
+    {
+      "id": "s04",
+      "en": "Emily walked inside and saw rivers of chocolate flowing like magic.",
+      "zh": "艾米莉走进去,看到巧克力像魔法一样流淌成河。"
+    },
+    {
+      "id": "s05",
+      "en": "It was the most exciting experience she had ever seen.",
+      "zh": "这是她见过的最令人兴奋的经历。"
+    },
+    {
+      "id": "s06",
+      "en": "Rich customers came from far away to buy the famous chocolate.",
+      "zh": "富有的顾客从远方赶来购买这种著名的巧克力。"
+    },
+    {
+      "id": "s07",
+      "en": "But poor village children stood outside, watching with empty eyes.",
+      "zh": "但贫穷的村庄孩子们站在外面,空洞的眼睛望着里面。"
+    },
+    {
+      "id": "s08",
+      "en": "Emily's heart ached when she saw the hungry children.",
+      "zh": "艾米莉看到饥饿的孩子们时心疼不已。"
+    },
+    {
+      "id": "s09",
+      "en": "\"We have so much chocolate, but they have nothing,\" she said.",
+      "zh": "\"我们有这么多巧克力,但他们什么都没有,\"她说。"
+    },
+    {
+      "id": "s10",
+      "en": "Kreacher smiled and believed every child deserved some joy.",
+      "zh": "克雷彻微笑着,认为每个孩子都应该得到一些快乐。"
+    },
+    {
+      "id": "s11",
+      "en": "He filled a basket with chocolate and walked outside to the children.",
+      "zh": "他把一个篮子装满巧克力,走出去找那些孩子们。"
+    },
+    {
+      "id": "s12",
+      "en": "The children received chocolate and their faces became bright with surprise and happiness.",
+      "zh": "孩子们收到巧克力,脸上因惊喜和快乐而变得明亮起来。"
+    },
+    {
+      "id": "s13",
+      "en": "Emily finally understood that wealth meant nothing without sharing with others.",
+      "zh": "艾米莉终于明白,不与他人分享财富就毫无意义。"
+    },
+    {
+      "id": "s14",
+      "en": "She left the magical factory feeling that everything good began with kindness.",
+      "zh": "她离开这个奇妙的工厂,感到一切美好的事物都始于善良。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "magical-chocolate-factory",
+    "theme_name_zh": "神奇的巧克力工厂",
+    "theme_name_en": "The Magical Chocolate Factory",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-28T07:55:12.893767+00:00",
+    "regeneration_count": 0,
+    "coverage": {
+      "total": 16,
+      "covered": 16,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

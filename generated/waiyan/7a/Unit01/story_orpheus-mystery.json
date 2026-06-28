@@ -1,0 +1,88 @@
+{
+  "title_en": "The Mysterious Post Office",
+  "title_zh": "神秘的邮局",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Detective Orpheus arrived at the post office after receiving a strange call about mysterious events.",
+      "zh": "侦探奥菲斯在接到一个关于神秘事件的奇怪电话后抵达了邮局。"
+    },
+    {
+      "id": "s02",
+      "en": "Papers on the desks began to wave on their own without any wind blowing.",
+      "zh": "桌上的纸张在没有风吹的情况下自己飘动起来。"
+    },
+    {
+      "id": "s03",
+      "en": "Emma Woods, the clerk, told him objects fell mysteriously every afternoon in the office.",
+      "zh": "办事员艾玛·伍兹告诉他,每天下午办公室里都会有物品神秘掉落。"
+    },
+    {
+      "id": "s04",
+      "en": "\"This is very strange,\" Orpheus said while surveying the dusty room carefully.",
+      "zh": "\"这非常奇怪,\"奥菲斯一边仔细观察这间布满灰尘的房间一边说道。"
+    },
+    {
+      "id": "s05",
+      "en": "He noticed an old fan turned on by itself, blowing air across the desks.",
+      "zh": "他注意到一台旧风扇自己转了起来,向办公桌上吹风。"
+    },
+    {
+      "id": "s06",
+      "en": "\"Did you receive any strange instruction today?\" he asked Emma with a serious look.",
+      "zh": "\"你今天收到什么奇怪的指令了吗?\"他表情严肃地问艾玛。"
+    },
+    {
+      "id": "s07",
+      "en": "Emma nodded and showed him a note that appeared on her desk mysteriously.",
+      "zh": "艾玛点了点头,给她看了一张神秘出现在她桌上的纸条。"
+    },
+    {
+      "id": "s08",
+      "en": "Orpheus examined the note carefully, his fingers ready to touch the cold paper.",
+      "zh": "奥菲斯仔细检查着纸条,他的手指准备触碰那张冰冷的纸。"
+    },
+    {
+      "id": "s09",
+      "en": "The message gave one example of the strange orders sent here, and Emma seemed surprised by its contents.",
+      "zh": "纸条上写着一条奇怪的指令示例,艾玛似乎对其内容感到惊讶。"
+    },
+    {
+      "id": "s10",
+      "en": "He found a small device hidden under the counter and finally understood the reason.",
+      "zh": "他在柜台下面发现了一个隐藏的小装置,终于明白了原因。"
+    },
+    {
+      "id": "s11",
+      "en": "The device was a tiny wind machine that made papers fall and wave around.",
+      "zh": "这个装置是一台小型吹风机,可以让纸张掉落和飘动。"
+    },
+    {
+      "id": "s12",
+      "en": "\"Someone is playing a trick on us,\" Orpheus said while preparing a presentation for the chief.",
+      "zh": "\"有人在捉弄我们,\"奥菲斯一边为局长准备报告一边说道。"
+    },
+    {
+      "id": "s13",
+      "en": "The case was solved, and the strange events at the post office stopped happening.",
+      "zh": "案件解决了,邮局里的奇怪事件也不再发生了。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "orpheus-mystery",
+    "theme_name_zh": "奥菲乌斯调查事件",
+    "theme_name_en": "Orpheus Investigates",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-28T08:00:11.287162+00:00",
+    "regeneration_count": 2,
+    "coverage": {
+      "total": 14,
+      "covered": 13,
+      "missing": [
+        "himself"
+      ]
+    }
+  },
+  "schema_version": 1
+}

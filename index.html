@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI English Unit Studio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Nunito", "PingFang SC", system-ui, -apple-system, sans-serif;
+      background: #0e0e0e;
+      color: #e8e8e8;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .header {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 20px 24px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #fff 0%, #a8c5ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+    .section-title {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 16px;
+      padding-left: 4px;
+    }
+    .unit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .unit-card {
+      position: relative;
+      display: block;
+      aspect-ratio: 16/9;
+      background: var(--card-bg, #2a2a2a) center/cover no-repeat;
+      border-radius: 16px;
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .unit-card:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    }
+    .unit-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.85) 100%);
+    }
+    .unit-card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      z-index: 2;
+    }
+    .unit-card-tag {
+      display: inline-block;
+      background: rgba(91, 141, 239, 0.85);
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    .unit-title-en {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 4px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      letter-spacing: -0.5px;
+    }
+    .unit-title-zh {
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+    .unit-meta {
+      font-size: 11px;
+      color: rgba(255,255,255,0.7);
+      display: flex;
+      gap: 12px;
+    }
+    .unit-arrow {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      z-index: 2;
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: white;
+      transition: all 0.2s;
+    }
+    .unit-card:hover .unit-arrow {
+      background: rgba(255,255,255,0.35);
+      transform: scale(1.1) translateX(2px);
+    }
+    @media (max-width: 600px) {
+      .unit-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 26px; }
+      .header { padding: 32px 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>AI English Unit Studio</h1>
+    <p class="subtitle">把每单元的单词表，变成爱读爱听的小故事</p>
+  </header>
+
+  <div class="container">
+    <div class="section-title">📚 单元列表</div>
+    <div class="unit-grid">
+      <a class="unit-card" href="generated/waiyan/7a/Unit01/index.html" style="--card-bg: url('data/covers/magical-chocolate-factory.png')"><div class="unit-arrow">→</div><div class="unit-card-content"><span class="unit-card-tag">📖 初一下 · 外研社</span><div class="unit-title-en">The secrets of happiness</div><div class="unit-title-zh">Unit 1 幸福的秘密</div><div class="unit-meta"><span>🎙 4 个故事</span></div></div></a>
+    </div>
+  </div>
+</body>
+</html>

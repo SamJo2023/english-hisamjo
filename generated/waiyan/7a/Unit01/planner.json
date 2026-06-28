@@ -1,0 +1,101 @@
+{
+  "themes": [
+    {
+      "id": "magical-chocolate-factory",
+      "name_en": "The Magical Chocolate Factory",
+      "name_zh": "神奇的巧克力工厂",
+      "scene_description": "Doctor Emily Dyer visits a magical chocolate factory in a small town owned by wealthy philanthropist Kreacher Pierson. The factory produces wonderful chocolate that brings joy to both rich customers and poor village children.",
+      "character_focus": [
+        "Doctor Emily Dyer",
+        "Kreacher Pierson",
+        "a poor village boy"
+      ],
+      "word_list": [
+        "basket",
+        "become",
+        "believe",
+        "chocolate",
+        "customer",
+        "empty",
+        "everything",
+        "exciting",
+        "experience",
+        "factory",
+        "finally",
+        "magical",
+        "poor",
+        "receive",
+        "rich",
+        "town"
+      ]
+    },
+    {
+      "id": "kind-barber",
+      "name_en": "The Kind Barber",
+      "name_zh": "善良的理发师",
+      "scene_description": "Serveran the Magician discovers an old barber in town who lost his wife to cancer. Instead of giving up, the barber now gives free haircuts and wigs to poor village children, showing remarkable courage and kindness.",
+      "character_focus": [
+        "Magician Serveran",
+        "the old barber",
+        "a poor village girl"
+      ],
+      "word_list": [
+        "barber",
+        "bath",
+        "cabbage",
+        "cancer",
+        "hat",
+        "scissors",
+        "shame",
+        "shoulder",
+        "smart",
+        "voice",
+        "wig"
+      ]
+    },
+    {
+      "id": "orpheus-mystery",
+      "name_en": "Orpheus Investigates",
+      "name_zh": "奥菲乌斯调查事件",
+      "scene_description": "Detective Orpheus is called to investigate strange events happening at a post office. Objects fall mysteriously, papers wave on their own, and the office staff receive strange instructions. Orpheus surveys the scene and searches for reasons behind the mysterious happenings.",
+      "character_focus": [
+        "Detective Orpheus",
+        "Emma Woods"
+      ],
+      "word_list": [
+        "blow",
+        "example",
+        "fall",
+        "happen",
+        "instruction",
+        "office",
+        "post office",
+        "presentation",
+        "reason",
+        "surprised",
+        "survey",
+        "touch",
+        "wave",
+        "himself"
+      ]
+    }
+  ],
+  "review": {
+    "id": "harsh-winter",
+    "name_en": "A Strange Winter Day",
+    "name_zh": "一个奇异的冬日",
+    "scene_description": "Emma Woods and a princess spend time together during an unusually harsh winter. The weather is freezing and sunless, so they stay inside and play chess while drinking watery soup by the window, waiting for spring to arrive.",
+    "character_focus": [
+      "Emma Woods",
+      "the princess"
+    ],
+    "word_list": [
+      "chess",
+      "freezing",
+      "princess",
+      "sunless",
+      "watery"
+    ]
+  },
+  "schema_version": 1
+}

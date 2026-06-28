@@ -1,0 +1,71 @@
+{
+  "title_en": "The Barber's Kindness",
+  "title_zh": "理发师的善意",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Serveran the Magician walked through a dusty village market and found an old barber sitting alone among stalls selling cabbage.",
+      "zh": "魔术师塞维兰走过尘土飞扬的村市场,发现一位老理发师独自坐在卖白菜的摊位旁。"
+    },
+    {
+      "id": "s02",
+      "en": "The barber's wife had died from cancer, but he still opened his shop every morning.",
+      "zh": "理发师的妻子死于癌症,但他每天早上仍然开门营业。"
+    },
+    {
+      "id": "s03",
+      "en": "\"I give free haircuts and wigs to poor children now,\" the barber said in a quiet voice.",
+      "zh": "\"现在我给穷孩子免费理发和做假发,\"理发师轻声说道。"
+    },
+    {
+      "id": "s04",
+      "en": "Serveran watched as the barber trimmed hair with steady hands and made colorful wigs for village girls.",
+      "zh": "塞维兰看着理发师用稳定的手修剪头发,为村里的小女孩制作彩色假发。"
+    },
+    {
+      "id": "s05",
+      "en": "A little girl entered, hiding her face because she felt shame about her bald spots.",
+      "zh": "一个小女孩走了进来,遮住自己的脸,因为她为自己的秃斑感到羞耻。"
+    },
+    {
+      "id": "s06",
+      "en": "The kind barber patted his shoulder and said, \"Come sit here, dear, let me help you feel smart again.\"",
+      "zh": "善良的理发师拍拍自己的肩膀说:\"来这里坐下,亲爱的,让我帮你重新变得漂亮。\""
+    },
+    {
+      "id": "s07",
+      "en": "He gently cut her tangled hair with old scissors and placed a beautiful wig on her head.",
+      "zh": "他用旧剪刀轻轻剪掉她缠结的头发,然后把一顶美丽的假发戴在她头上。"
+    },
+    {
+      "id": "s08",
+      "en": "He then put a bright hat on her and smiled warmly at her reflection in the mirror.",
+      "zh": "然后他给她戴上一顶鲜艳的帽子,温暖地对着镜子里的她微笑。"
+    },
+    {
+      "id": "s09",
+      "en": "The girl looked at herself and her eyes filled with happy tears as she remembered her last warm bath days.",
+      "zh": "女孩看着自己,眼里充满了幸福的泪水,她想起了上次洗热水澡的日子。"
+    },
+    {
+      "id": "s10",
+      "en": "Serveran learned that day that true courage means turning pain into kindness for others.",
+      "zh": "那天塞维兰明白,真正的勇气意味着把痛苦转化为对他人的善意。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "kind-barber",
+    "theme_name_zh": "善良的理发师",
+    "theme_name_en": "The Kind Barber",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-28T07:56:23.128769+00:00",
+    "regeneration_count": 1,
+    "coverage": {
+      "total": 11,
+      "covered": 11,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}
