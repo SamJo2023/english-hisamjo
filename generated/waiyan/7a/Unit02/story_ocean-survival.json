@@ -1,0 +1,66 @@
+{
+  "title_en": "Shark Attack at the Manor Beach",
+  "title_zh": "庄园海滩的鲨鱼袭击",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Serveran and Kreacher Pierson rode their surfboards toward a mysterious beach, excited for an afternoon of surfing.",
+      "zh": "塞弗然和克雷彻·皮尔森冲向一块神秘的海滩,兴奋地准备进行下午的冲浪活动。"
+    },
+    {
+      "id": "s02",
+      "en": "The two surfers laughed as they caught perfect waves under the afternoon sun.",
+      "zh": "两个冲浪者在午后的阳光下追逐着完美的海浪,开心地大笑。"
+    },
+    {
+      "id": "s03",
+      "en": "Suddenly, a massive shark attacked their surfboards, biting the edges with razor teeth!",
+      "zh": "突然,一条巨大的鲨鱼袭击了他们的冲浪板,用锋利的牙齿撕咬着板沿!"
+    },
+    {
+      "id": "s04",
+      "en": "Kreacher Pierson felt a terrible stomachache from fear and screamed, \"None of us can escape!\"",
+      "zh": "克雷彻·皮尔森因恐惧感到一阵剧烈的胃痛,尖叫道:我们谁也逃不掉!"
+    },
+    {
+      "id": "s05",
+      "en": "Their surfboard began to sink fast as blood spread through the blue water.",
+      "zh": "随着血迹在蓝色的海水中蔓延,他们的冲浪板开始快速下沉。"
+    },
+    {
+      "id": "s06",
+      "en": "\"We must sink or swim!\" Serveran shouted, grabbing Kreacher Pierson's arm.",
+      "zh": "我们不是沉下去就是游起来!塞弗然大喊,同时抓住了克雷彻·皮尔森的手臂。"
+    },
+    {
+      "id": "s07",
+      "en": "They kicked hard, swimming between the deadly waves while the angry shark circled them.",
+      "zh": "他们拼命踢水,在致命的海浪间游动,而愤怒的鲨鱼在他们周围盘旋。"
+    },
+    {
+      "id": "s08",
+      "en": "Orpheus appeared on the cliff, his voice cutting through the chaos: \"Go for it! Swim sideways!\"",
+      "zh": "俄耳甫斯出现在悬崖上,他的声音划破混乱:加油!侧着身子游!"
+    },
+    {
+      "id": "s09",
+      "en": "They swam with all their strength, and the shark finally lost interest and dove deep.",
+      "zh": "他们用尽全力游动,鲨鱼终于失去了兴趣,潜入深海。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "ocean-survival",
+    "theme_name_zh": "海上生存挑战",
+    "theme_name_en": "Ocean Survival Challenge",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-29T23:03:15.237717+00:00",
+    "regeneration_count": 1,
+    "coverage": {
+      "total": 10,
+      "covered": 10,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

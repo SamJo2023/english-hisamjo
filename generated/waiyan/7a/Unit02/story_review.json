@@ -1,0 +1,61 @@
+{
+  "title_en": "The Final Score at the Manor",
+  "title_zh": "庄园的最后得分",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "As the sun set, the survivors gathered at the old manor.",
+      "zh": "夕阳西下,幸存者们聚集在古老的庄园里。"
+    },
+    {
+      "id": "s02",
+      "en": "Emma Woods sat on the porch, while Serveran checked the doors.",
+      "zh": "艾玛·伍兹坐在门廊上,而瑟弗文则检查着门。"
+    },
+    {
+      "id": "s03",
+      "en": "Orpheus arrived last but not least, his cloak swirling in the evening breeze.",
+      "zh": "俄耳甫斯最后但同样重要地到达了,他的斗篷在晚风中飘动。"
+    },
+    {
+      "id": "s04",
+      "en": "He picked up a piece of chalk and drew a line across the wooden floor.",
+      "zh": "他捡起一根粉笔,在木地板上画了一条线。"
+    },
+    {
+      "id": "s05",
+      "en": "\"Watch this,\" he said, and scored a perfect mark on the chalk line.",
+      "zh": "\"看好了,\"他说,然后在粉笔线上得了一个完美的分。"
+    },
+    {
+      "id": "s06",
+      "en": "Emma smiled and said, \"We make a great team, thanks to everyone's effort.\"",
+      "zh": "艾玛笑着说:\"多亏每个人的努力,我们组成了一个很棒的团队。\""
+    },
+    {
+      "id": "s07",
+      "en": "Serveran nodded, his eyes gleaming with hope for the days ahead.",
+      "zh": "瑟弗文点了点头,眼中闪烁着对未来的希望。"
+    },
+    {
+      "id": "s08",
+      "en": "Orpheus looked up at the moon and wondered, \"What adventures shall tomorrow bring?\"",
+      "zh": "俄耳甫斯抬头望着月亮,心里想着:\"明天会有什么样的冒险呢?\""
+    }
+  ],
+  "_meta": {
+    "theme_id": "review",
+    "theme_name_zh": "在庄园",
+    "theme_name_en": "At the Manor",
+    "is_review": true,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-29T23:05:13.192042+00:00",
+    "regeneration_count": 0,
+    "coverage": {
+      "total": 5,
+      "covered": 5,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

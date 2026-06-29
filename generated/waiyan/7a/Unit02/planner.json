@@ -1,0 +1,118 @@
+{
+  "themes": [
+    {
+      "id": "the-great-marathon",
+      "name_en": "The Great Marathon",
+      "name_zh": "盛大的马拉松",
+      "scene_description": "Emma Woods decides to join a marathon competition at the manor grounds. Her friends Emily Dyer and Naidu cheer her on as she runs toward the finishing line, fighting to cross it and win the gold medal.",
+      "character_focus": [
+        "Emma Woods",
+        "Emily Dyer",
+        "Naidu"
+      ],
+      "word_list": [
+        "breath",
+        "cheer",
+        "cross",
+        "final",
+        "finish",
+        "fit",
+        "goal",
+        "gold",
+        "hold your breath",
+        "marathon",
+        "match",
+        "medal",
+        "the finishing line"
+      ]
+    },
+    {
+      "id": "ocean-survival",
+      "name_en": "Ocean Survival Challenge",
+      "name_zh": "海上生存挑战",
+      "scene_description": "Serveran and Kreacher Pierson go surfing at a mysterious beach near the manor. Suddenly a shark appears and their board starts to sink — they must learn to sink or swim to survive the dangerous waves.",
+      "character_focus": [
+        "Serveran",
+        "Kreacher Pierson",
+        "Orpheus"
+      ],
+      "word_list": [
+        "attack",
+        "none",
+        "shark",
+        "sink",
+        "sink or swim",
+        "stomachache",
+        "surfboard",
+        "surfer",
+        "surfing",
+        "wave"
+      ]
+    },
+    {
+      "id": "a-difficult-choice",
+      "name_en": "A Difficult Choice",
+      "name_zh": "艰难的抉择",
+      "scene_description": "Orpheus faces an important decision in the manor library. He must compare both choices carefully — neither option seems easy, and he must find the courage to continue fighting despite the risk of losing.",
+      "character_focus": [
+        "Orpheus",
+        "Emily Dyer"
+      ],
+      "word_list": [
+        "both",
+        "chance",
+        "choice",
+        "compare",
+        "continue",
+        "courage",
+        "either",
+        "fight",
+        "lose",
+        "neither",
+        "record"
+      ]
+    },
+    {
+      "id": "words-of-encouragement",
+      "name_en": "Words of Encouragement",
+      "name_zh": "鼓励的话语",
+      "scene_description": "Before Naidu's big match, Emma Woods encourages her friend to stay confident. She reminds her to pay attention to her lifelong dream and believe in her spirit — success and victory are within reach.",
+      "character_focus": [
+        "Emma Woods",
+        "Naidu",
+        "Emily Dyer"
+      ],
+      "word_list": [
+        "attention",
+        "confident",
+        "dream",
+        "encourage",
+        "lifelong",
+        "pay attention",
+        "spirit",
+        "success",
+        "victory",
+        "wonder"
+      ]
+    }
+  ],
+  "review": {
+    "id": "review",
+    "name_en": "At the Manor",
+    "name_zh": "在庄园",
+    "scene_description": "As the day ends, the survivors gather at the manor. Last but not least, Orpheus scores a point on the chalk line and wonders what adventures tomorrow shall bring, thanks to their teamwork.",
+    "character_focus": [
+      "Orpheus",
+      "Emma Woods",
+      "Serveran"
+    ],
+    "word_list": [
+      "last but not least",
+      "line",
+      "score",
+      "shall",
+      "thanks to"
+    ]
+  },
+  "schema_version": 1
+}

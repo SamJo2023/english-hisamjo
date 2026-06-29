@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "theme_id": "review",
+  "story_sha256": "e7f297edc82719ae",
+  "voice": "tianxin_xiaoling",
+  "speed": 1.0,
+  "total_sentences": 8,
+  "generated_count": 8,
+  "skipped_count": 0,
+  "failed_count": 0,
+  "failed_sentences": []
+}

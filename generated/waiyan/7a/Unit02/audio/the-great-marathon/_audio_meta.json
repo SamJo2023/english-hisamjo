@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "theme_id": "the-great-marathon",
+  "story_sha256": "3c1b8202c7e99af2",
+  "voice": "tianxin_xiaoling",
+  "speed": 1.0,
+  "total_sentences": 12,
+  "generated_count": 8,
+  "skipped_count": 4,
+  "failed_count": 0,
+  "failed_sentences": []
+}

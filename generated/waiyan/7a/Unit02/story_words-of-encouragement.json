@@ -1,0 +1,68 @@
+{
+  "title_en": "The Courage to Begin",
+  "title_zh": "勇敢的开始",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Naidu stood at the arena entrance, her hands trembling slightly.",
+      "zh": "奈杜站在竞技场入口处,双手微微颤抖。"
+    },
+    {
+      "id": "s02",
+      "en": "Emma Woods walked over and placed a gentle hand on her shoulder.",
+      "zh": "艾玛·伍兹走过来,轻轻把手放在她肩上。"
+    },
+    {
+      "id": "s03",
+      "en": "\"Stay confident,\" Emma encouraged. \"Your lifelong dream is right here, go for it!\"",
+      "zh": "\"保持自信,\"艾玛鼓励道。\"你毕生的梦想就在这里,加油!\""
+    },
+    {
+      "id": "s04",
+      "en": "\"I wonder if I am truly ready,\" Naidu whispered, her voice soft.",
+      "zh": "\"我不知道自己是否真的准备好了,\"奈杜轻声说道。"
+    },
+    {
+      "id": "s05",
+      "en": "\"Pay attention to your spirit,\" Emma said warmly. \"That is where your strength lives.\"",
+      "zh": "\"关注你的精神,\"艾玛温暖地说。\"你的力量就在那里。\""
+    },
+    {
+      "id": "s06",
+      "en": "Emily Dyer stepped out of the crowd, smiling brightly at her friend.",
+      "zh": "艾米莉·戴尔从人群中走出来,灿烂地微笑着看向她的朋友。"
+    },
+    {
+      "id": "s07",
+      "en": "\"Success belongs to those who believe,\" Emily added softly.",
+      "zh": "\"成功属于那些相信自己的人,\"艾米莉轻声补充道。"
+    },
+    {
+      "id": "s08",
+      "en": "Naidu felt warmth spread through her chest as their words sank in.",
+      "zh": "奈杜感到一股暖流在胸口蔓延,他们的话语渐渐渗入心田。"
+    },
+    {
+      "id": "s09",
+      "en": "She stepped onto the field, ready to chase her dream with all her heart.",
+      "zh": "她踏上场地,准备全力以赴追逐自己的梦想。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "words-of-encouragement",
+    "theme_name_zh": "鼓励的话语",
+    "theme_name_en": "Words of Encouragement",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-29T23:04:55.297231+00:00",
+    "regeneration_count": 2,
+    "coverage": {
+      "total": 10,
+      "covered": 9,
+      "missing": [
+        "victory"
+      ]
+    }
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,71 @@
+{
+  "title_en": "The Path Forward",
+  "title_zh": "前进的道路",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Orpheus stood in the dark manor library, moonlight streaming through the broken windows above.",
+      "zh": "奥菲斯站在黑暗的庄园图书馆里,月光从上方破损的窗户倾泻而入。"
+    },
+    {
+      "id": "s02",
+      "en": "Emily Dyer watched him carefully, her hands trembling as she held her medical kit close.",
+      "zh": "艾米莉·戴尔仔细地看着他,双手颤抖着紧紧抱着医疗箱。"
+    },
+    {
+      "id": "s03",
+      "en": "\"There are two paths ahead, and we must take either one,\" Orpheus whispered, pointing to two ancient books on the dusty table.",
+      "zh": "「前方有两条路,我们必须选择其中一条,」奥菲斯低声说,指向布满灰尘的桌子上两本古老的书。"
+    },
+    {
+      "id": "s04",
+      "en": "\"Neither path guarantees our safety, but both could change everything for us,\" he admitted with a heavy sigh.",
+      "zh": "「两条路都不能保证我们的安全,但都可能改变我们的一切,」他沉重地叹了口气承认道。"
+    },
+    {
+      "id": "s05",
+      "en": "Emily stepped closer and asked softly, \"What will your choice be?\"",
+      "zh": "艾米莉走近一些,轻声问道:「你的选择是什么?」"
+    },
+    {
+      "id": "s06",
+      "en": "Orpheus compared the two options carefully, one held a record of past survivors, the other a map to hidden supplies.",
+      "zh": "奥菲斯仔细比较了两个选项,一本记录着过去幸存者的情况,另一本是隐藏物资的地图。"
+    },
+    {
+      "id": "s07",
+      "en": "\"If I choose wrong, we could lose everything,\" he confessed, his voice shaking in the silence.",
+      "zh": "「如果我选错了,我们可能会失去一切,」他坦白道,声音在寂静中颤抖。"
+    },
+    {
+      "id": "s08",
+      "en": "Emily placed her hand gently on his shoulder and said, \"You have the courage to continue the fight.\"",
+      "zh": "艾米莉轻轻把手放在他的肩上,说:「你有继续战斗的勇气。」"
+    },
+    {
+      "id": "s09",
+      "en": "\"This is our only chance to break free,\" she added, her eyes filled with determination and hope.",
+      "zh": "「这是我们唯一的机会,」她补充道,眼里充满了决心和希望。"
+    },
+    {
+      "id": "s10",
+      "en": "Orpheus took a deep breath, grabbed one book, and decided it was time to go for it.",
+      "zh": "奥菲斯深吸一口气,拿起一本书,决定是时候勇往直前了。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "a-difficult-choice",
+    "theme_name_zh": "艰难的抉择",
+    "theme_name_en": "A Difficult Choice",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-29T23:03:58.485492+00:00",
+    "regeneration_count": 1,
+    "coverage": {
+      "total": 11,
+      "covered": 11,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

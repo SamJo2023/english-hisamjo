@@ -1,0 +1,83 @@
+{
+  "title_en": "The Marathon Victory",
+  "title_zh": "马拉松的胜利",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Emma Woods stood at the manor grounds, her heart racing before the marathon.",
+      "zh": "艾玛·伍兹站在庄园的场地上,马拉松比赛前她的心跳加速。"
+    },
+    {
+      "id": "s02",
+      "en": "\"I'm fit for this,\" she whispered to herself, tying her running shoes tight.",
+      "zh": "\"我为此做好了准备,\"她低声对自己说,把跑鞋系紧。"
+    },
+    {
+      "id": "s03",
+      "en": "Emily Dyer and Naidu stood by the track, waving their hands to cheer.",
+      "zh": "艾米莉·戴尔和奈杜站在赛道旁,挥手欢呼。"
+    },
+    {
+      "id": "s04",
+      "en": "The whistle blew and Emma ran, feeling her breath quicken with every step.",
+      "zh": "哨声响起,艾玛开始跑,每一步都感觉到呼吸加快。"
+    },
+    {
+      "id": "s05",
+      "en": "Around her, other runners dashed forward in the match, their feet pounding the grass.",
+      "zh": "她周围,其他参赛者冲了出去,脚踩在草地上发出重击声。"
+    },
+    {
+      "id": "s06",
+      "en": "Emma felt her legs ache but she kept going, her fit body refusing to give up.",
+      "zh": "艾玛感到腿酸痛,但她继续前进,她健壮的身体拒绝放弃。"
+    },
+    {
+      "id": "s07",
+      "en": "\"Go for it, Emma!\" Naidu shouted, waving a bright yellow flag.",
+      "zh": "\"加油,艾玛!\"奈杜喊道,挥舞着一面鲜黄的旗帜。"
+    },
+    {
+      "id": "s08",
+      "en": "Emma pushed harder, her legs pumping toward the finishing line like never before.",
+      "zh": "艾玛更加用力推近,双腿以前所未有的力量向终点线冲去。"
+    },
+    {
+      "id": "s09",
+      "en": "\"Hold your breath!\" Naidu yelled as Emma surged ahead in the final stretch.",
+      "zh": "\"屏住呼吸!\"奈杜在最后一段喊道,艾玛冲到了前面。"
+    },
+    {
+      "id": "s10",
+      "en": "The crowd erupted when Emma crossed the line first, their voices filling the air.",
+      "zh": "当艾玛第一个冲过终点线时,人群沸腾了,声音充满了空气。"
+    },
+    {
+      "id": "s11",
+      "en": "\"You did it! You did it!\" Emily Dyer screamed, hugging Emma with tears.",
+      "zh": "\"你做到了!你做到了!\"艾米莉·戴尔哭着尖叫,紧紧拥抱着艾玛。"
+    },
+    {
+      "id": "s12",
+      "en": "A gold medal hung around Emma's neck as she smiled, her hard work finally paid off.",
+      "zh": "一枚金牌挂在艾玛的脖子上,她微笑着,她的努力终于得到了回报。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "the-great-marathon",
+    "theme_name_zh": "盛大的马拉松",
+    "theme_name_en": "The Great Marathon",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-29T23:02:34.796217+00:00",
+    "regeneration_count": 2,
+    "coverage": {
+      "total": 13,
+      "covered": 12,
+      "missing": [
+        "goal"
+      ]
+    }
+  },
+  "schema_version": 1
+}
