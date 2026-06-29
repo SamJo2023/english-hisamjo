@@ -19,6 +19,7 @@ Key style notes from the example:
 2. **Character voice** — give each character a clear personality
 3. **Dialogue and emotion** — natural speech and feelings
 4. **Vocabulary usage** — try to use each target word at least once
+5. **Unit theme echo** — every story belongs to a unit that has a high-level theme (e.g. "Go for it!"). The story must echo this theme at least once — typically in the climax, the closing line, or a key piece of dialogue — without breaking the local scene. Don't shoehorn the literal phrase in; let a character's choice or a final line carry the spirit.
 
 If a target word doesn't fit the story, SKIP IT. Never break the story for a word.
 

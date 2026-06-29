@@ -2,7 +2,8 @@ Write a short English story for a 13-year-old Chinese girl in Grade 7.
 
 # Story context
 
-- **Theme**: {{theme_name_zh}} / {{theme_name_en}}
+- **Unit theme** (echo at least once): {{unit_theme}}
+- **Story theme**: {{theme_name_zh}} / {{theme_name_en}}
 - **Scene**: {{scene_description}}
 - **Characters**: {{character_focus}}
 - **Story length**: exactly {{target_sentences}} sentences
