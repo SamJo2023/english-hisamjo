@@ -44,13 +44,13 @@ _MD_LINE_FULL = re.compile(
     (?P<lemma>[A-Za-z][A-Za-z\s'-]+?)      # 词条（非贪婪，给后面的可选部分留位置）
     \s+(?P<phon>/[^/]+/)?                  # 可选音标
     \s*(?P<pos>(?:n|v|adj|adv|pron|prep|conj|art|num|int|phr|aux|vi|vt)\.?)?
-    \s+(?P<gloss>[^0-9].+?)                 # 中文释义（不以数字开头）
+    \s+(?P<gloss>[^0-9].*?)                 # 中文释义（不以数字开头；用 .*? 不是 .+?，让单字 gloss 不吃掉页码前的空格）
     \s+(?P<page>\d+)\s*$
     """,
     re.VERBOSE | re.IGNORECASE,
 )
 _MD_LINE_PHRASE = re.compile(
-    r"^(?P<lemma>[A-Za-z][A-Za-z\s'-]+)\s+(?P<gloss>[^0-9].+?)\s+(?P<page>\d+)\s*$"
+    r"^(?P<lemma>[A-Za-z][A-Za-z\s'-]+)\s+(?P<gloss>[^0-9].*?)\s+(?P<page>\d+)\s*$"
 )
 
 

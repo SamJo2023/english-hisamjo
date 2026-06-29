@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "textbook": "waiyan",
+  "grade": "7a",
+  "unit": 2,
+  "unit_title_zh": "Module 2 跑步与坚持",
+  "unit_title_en": "Running and Perseverance",
+  "topic_hint": "围绕体育、海洋、坚持、勇气的多故事。外研版初一上 Unit 2。",
+  "config": {
+    "target_sentences": 49,
+    "min_occurrences_per_word": 2,
+    "tts_voice": "tianxin_xiaoling",
+    "tts_speed": 1.0
+  },
+  "words": [
+    {
+      "lemma": "last but not least",
+      "pos": "phr.",
+      "gloss_zh": "最后但同样重要的(一点)",
+      "phonetic_uk": "",
+      "phonetic_us": "",
+      "page": 20,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "marathon",
+      "pos": "n.",
+      "gloss_zh": "马拉松赛跑",
+      "phonetic_uk": "'mærəθən",
+      "phonetic_us": "'mærəθən",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "line",
+      "pos": "n.",
+      "gloss_zh": "线",
+      "phonetic_uk": "laɪn",
+      "phonetic_us": "laɪn",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "the finishing line",
+      "pos": "phr.",
+      "gloss_zh": "终点线",
+      "phonetic_uk": "",
+      "phonetic_us": "",
+      "page": 20,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "breath",
+      "pos": "n.",
+      "gloss_zh": "呼出的气；吸入的气",
+      "phonetic_uk": "breθ",
+      "phonetic_us": "breθ",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "hold your breath",
+      "pos": "phr.",
+      "gloss_zh": "屏住呼吸；屏息静气",
+      "phonetic_uk": "",
+      "phonetic_us": "",
+      "page": 20,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "confident",
+      "pos": "adj.",
+      "gloss_zh": "有信心的，自信的",
+      "phonetic_uk": "'kɒnfɪdənt",
+      "phonetic_us": "'kɒnfɪdənt",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "stomachache",
+      "pos": "n.",
+      "gloss_zh": "胃痛；肚子痛",
+      "phonetic_uk": "'stʌmək-eɪk",
+      "phonetic_us": "'stʌmək-eɪk",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "shall",
+      "pos": "v.",
+      "gloss_zh": "要不要……？",
+      "phonetic_uk": "ʃæl",
+      "phonetic_us": "ʃæl",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "either",
+      "pos": "pron.",
+      "gloss_zh": "(两者中的)任何一个",
+      "phonetic_uk": "'aɪðə",
+      "phonetic_us": "'aɪðə",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "choice",
+      "pos": "n.",
+      "gloss_zh": "选择；选择权",
+      "phonetic_uk": "tʃɔɪs",
+      "phonetic_us": "tʃɔɪs",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "neither",
+      "pos": "pron.",
+      "gloss_zh": "两者都不(的)，两者中无一(的)",
+      "phonetic_uk": "'naɪðə",
+      "phonetic_us": "'naɪðə",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "cheer",
+      "pos": "v.",
+      "gloss_zh": "(为……)欢呼，喝彩；(为……)加油",
+      "phonetic_uk": "tʃɪə",
+      "phonetic_us": "tʃɪə",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "cross",
+      "pos": "v.",
+      "gloss_zh": "穿过，越过，跑过(终点线、小径等)",
+      "phonetic_uk": "krɒs",
+      "phonetic_us": "krɒs",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "lifelong",
+      "pos": "adj.",
+      "gloss_zh": "终身的，毕生的",
+      "phonetic_uk": "ˈlaɪflɒŋ",
+      "phonetic_us": "ˈlaɪflɒŋ",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "dream",
+      "pos": "n.",
+      "gloss_zh": "梦想，愿望，理想；梦",
+      "phonetic_uk": "drɪm",
+      "phonetic_us": "drɪm",
+      "page": 20,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "record",
+      "pos": "n.",
+      "gloss_zh": "记录，记载",
+      "phonetic_uk": "ˈrekɔːd",
+      "phonetic_us": "ˈrekɔːd",
+      "page": 21,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "none",
+      "pos": "pron.",
+      "gloss_zh": "全无，没有一点",
+      "phonetic_uk": "nʌn",
+      "phonetic_us": "nʌn",
+      "page": 21,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "finish",
+      "pos": "v.",
+      "gloss_zh": "完成，做完",
+      "phonetic_uk": "ˈfɪnɪʃ",
+      "phonetic_us": "ˈfɪnɪʃ",
+      "page": 21,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "encourage",
+      "pos": "v.",
+      "gloss_zh": "鼓励，激励",
+      "phonetic_uk": "ɪnˈkʌrɪdʒ",
+      "phonetic_us": "ɪnˈkʌrɪdʒ",
+      "page": 22,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "both",
+      "pos": "pron.",
+      "gloss_zh": "两者，双方，两个都",
+      "phonetic_uk": "bəʊθ",
+      "phonetic_us": "bəʊθ",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "sink",
+      "pos": "v.",
+      "gloss_zh": "下沉，沉没",
+      "phonetic_uk": "sɪŋk",
+      "phonetic_us": "sɪŋk",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "sink or swim",
+      "pos": "phr.",
+      "gloss_zh": "自生自灭，成败全靠自己",
+      "phonetic_uk": "",
+      "phonetic_us": "",
+      "page": 23,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "surfer",
+      "pos": "n.",
+      "gloss_zh": "冲浪者",
+      "phonetic_uk": "ˈsɜːfər",
+      "phonetic_us": "ˈsɜːfər",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "shark",
+      "pos": "n.",
+      "gloss_zh": "鲨（鱼）",
+      "phonetic_uk": "ʃɑːk",
+      "phonetic_us": "ʃɑːk",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "attack",
+      "pos": "v.",
+      "gloss_zh": "袭击，殴打；破坏",
+      "phonetic_uk": "əˈtæk",
+      "phonetic_us": "əˈtæk",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "lose",
+      "pos": "v.",
+      "gloss_zh": "失去；输掉",
+      "phonetic_uk": "luːz",
+      "phonetic_us": "luːz",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "surfing",
+      "pos": "n.",
+      "gloss_zh": "冲浪（运动）",
+      "phonetic_uk": "ˈsɜːfɪŋ",
+      "phonetic_us": "ˈsɜːfɪŋ",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "compare",
+      "pos": "v.",
+      "gloss_zh": "相比较；可媲美",
+      "phonetic_uk": "kəmˈpeər",
+      "phonetic_us": "kəmˈpeər",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "surfboard",
+      "pos": "n.",
+      "gloss_zh": "冲浪板",
+      "phonetic_uk": "ˈsɜːfboːd",
+      "phonetic_us": "ˈsɜːfboːd",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "wave",
+      "pos": "n.",
+      "gloss_zh": "浪潮；海浪",
+      "phonetic_uk": "weɪv",
+      "phonetic_us": "weɪv",
+      "page": 23,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "gold",
+      "pos": "adj.",
+      "gloss_zh": "金质的",
+      "phonetic_uk": "gəʊld",
+      "phonetic_us": "gəʊld",
+      "page": 25,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "medal",
+      "pos": "n.",
+      "gloss_zh": "奖牌；勋章",
+      "phonetic_uk": "ˈmedl",
+      "phonetic_us": "ˈmedl",
+      "page": 25,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "success",
+      "pos": "n.",
+      "gloss_zh": "成功，胜利，成就",
+      "phonetic_uk": "səkˈses",
+      "phonetic_us": "səkˈses",
+      "page": 26,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "fit",
+      "pos": "adj.",
+      "gloss_zh": "健壮的，健康的",
+      "phonetic_uk": "fɪt",
+      "phonetic_us": "fɪt",
+      "page": 27,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "final",
+      "pos": "n.",
+      "gloss_zh": "决赛",
+      "phonetic_uk": "ˈfaɪnəl",
+      "phonetic_us": "ˈfaɪnəl",
+      "page": 28,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "match",
+      "pos": "n.",
+      "gloss_zh": "体育比赛，竞赛",
+      "phonetic_uk": "mætʃ",
+      "phonetic_us": "mætʃ",
+      "page": 28,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "attention",
+      "pos": "n.",
+      "gloss_zh": "注意，专心，留心",
+      "phonetic_uk": "ə'tenʃən",
+      "phonetic_us": "ə'tenʃən",
+      "page": 28,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "pay attention",
+      "pos": "phr.",
+      "gloss_zh": "注意",
+      "phonetic_uk": "",
+      "phonetic_us": "",
+      "page": 28,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "continue",
+      "pos": "v.",
+      "gloss_zh": "(使)继续；(使)延续",
+      "phonetic_uk": "kən'tɪnjuː",
+      "phonetic_us": "kən'tɪnjuː",
+      "page": 28,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "fight",
+      "pos": "v.",
+      "gloss_zh": "努力争取，为(……)斗争",
+      "phonetic_uk": "faɪt",
+      "phonetic_us": "faɪt",
+      "page": 28,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "score",
+      "pos": "v.",
+      "gloss_zh": "(在运动、比赛或考试中)得(分)",
+      "phonetic_uk": "skɔː",
+      "phonetic_us": "skɔː",
+      "page": 28,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "goal",
+      "pos": "n.",
+      "gloss_zh": "进球；进球得分；目标",
+      "phonetic_uk": "gəʊl",
+      "phonetic_us": "gəʊl",
+      "page": 28,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "victory",
+      "pos": "n.",
+      "gloss_zh": "胜利，成功，赢",
+      "phonetic_uk": "'vɪktəri",
+      "phonetic_us": "'vɪktəri",
+      "page": 28,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "chance",
+      "pos": "n.",
+      "gloss_zh": "机会",
+      "phonetic_uk": "tʃɑːns",
+      "phonetic_us": "tʃɑːns",
+      "page": 28,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "wonder",
+      "pos": "v.",
+      "gloss_zh": "想要知道",
+      "phonetic_uk": "'wʌndə",
+      "phonetic_us": "'wʌndə",
+      "page": 29,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "courage",
+      "pos": "n.",
+      "gloss_zh": "勇气，胆量，勇敢",
+      "phonetic_uk": "'kʌrɪdʒ",
+      "phonetic_us": "'kʌrɪdʒ",
+      "page": 29,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "thanks to",
+      "pos": "phr.",
+      "gloss_zh": "多亏；幸亏；归功于",
+      "phonetic_uk": "",
+      "phonetic_us": "",
+      "page": 29,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "spirit",
+      "pos": "n.",
+      "gloss_zh": "(某一特定历史时期、地方或群体的)精神，风气",
+      "phonetic_uk": "'spɪrɪt",
+      "phonetic_us": "'spɪrɪt",
+      "page": 29,
+      "is_phrase": false,
+      "accept_forms": []
+    }
+  ]
+}
