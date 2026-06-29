@@ -5,9 +5,10 @@ Your job: analyze a unit's vocabulary list (40-50 words with POS and Chinese glo
 # Priority order (CRITICAL)
 
 1. **Story coherence** — each theme must support a coherent 10-15 sentence story
-2. **Word count balance** — each theme gets 10-15 words (not 5, not 25)
-3. **High coverage** — at least 80% of input words assigned to themes; remaining 10-20% to review
-4. **Character consistency** — each theme can feature Identity V characters
+2. **Word count balance** — distribute words EVENLY across themes. NEVER put 25+ words in one theme and 4 in another.
+3. **Review must have content** — `review` is NOT optional. It must contain 5-10 words, typically connector/abstract words that don't fit a single theme (both, either, neither, wonder, shall, attention, etc.).
+4. **High coverage** — at least 80% of input words assigned to themes; remaining 10-20% to review
+5. **Character consistency** — each theme can feature Identity V characters
 
 # Theme requirements
 
@@ -39,6 +40,20 @@ BAD — words forced together, no scene:
   "word_list": ["chocolate", "presentation", "hat", "bath", "chess", "experience", "voice"]
 }
 ```
+
+BAD — uneven distribution (one theme carries everything, others are leftover scraps, review is empty):
+```json
+{
+  "themes": [
+    { "id": "marathon", "word_list": ["attack", "breath", "cheer", /* ... 28 more words ... */] },
+    { "id": "beach", "word_list": ["shark", "surfboard", "wave"] },
+    { "id": "hospital", "word_list": ["stomachache"] },
+    { "id": "garden", "word_list": ["chance", "either"] }
+  ],
+  "review": { "word_list": [] }
+}
+```
+**This is the failure mode you must avoid.** When the LLM puts 30+ words in one theme, smaller themes can't support a story and the review has no words left.
 
 # Identity V character notes
 
@@ -78,12 +93,24 @@ Return ONLY a single JSON object. No prose, no markdown fences, no comments.
 }
 ```
 
-# Rules
+# Rules (HARD CONSTRAINTS — your output will be auto-validated)
 
 - Total `word_list` length across all themes + review must equal input word count
-- Each theme: 10-18 words (sweet spot is 12-15)
-- Review: any size (typically 5-10 words for leftovers)
+- **Each theme: 8-18 words** (sweet spot 10-16). Themes outside this range will be rejected.
+- **Review: 5-10 words** (REQUIRED — empty review will be rejected). Pick connector/abstract words or anything that doesn't fit a single theme.
+- **No single theme may hold more than 40% of total input words.** E.g. for 49 words, max is 19. If you're tempted to put 25+ in one theme, split it.
 - If a word truly fits nowhere, put it in `review` — do NOT force it into a theme
 - Theme `id` must be kebab-case, unique, descriptive
 - Do NOT output words that aren't in the input list
 - Order words within each word_list alphabetically for stability
+
+# Self-check (do this BEFORE returning JSON)
+
+Before returning, verify your output passes these checks:
+1. Sum of all `word_list` lengths = input word count
+2. Each theme has 8-18 words
+3. No theme has >40% of total words
+4. Review has 5-10 words
+5. No word appears in two themes (auto-deduped downstream, but causes confusion)
+
+If any check fails, **redistribute before returning.** Move words from overstuffed themes to underweight themes or to review.

@@ -13,6 +13,8 @@ Analyze this unit's vocabulary and group into themes.
 
 # Output
 
-Return ONLY the JSON object with themes[] and review. Each theme gets 10-18 words, scene is coherent, characters come from Identity V universe (Emily Dyer, Orpheus, Emma Woods, Naidu, Serveran, Kreacher Pierson, etc.) or are clearly fitting original characters.
+Return ONLY the JSON object with themes[] and review. Each theme gets **8-18 words** (target 10-16), and `review` MUST have 5-10 words. No theme may hold more than 40% of the total. See system prompt for self-check rules.
+
+Scene is coherent, characters come from Identity V universe (Emily Dyer, Orpheus, Emma Woods, Naidu, Serveran, Kreacher Pierson, etc.) or are clearly fitting original characters.
 
 Coverage target: assign at least 80% of words to themes; put the rest in `review`.
