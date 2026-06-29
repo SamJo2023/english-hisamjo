@@ -174,10 +174,36 @@ def render_unit_index_html(unit_path: str, vocab: dict, planner: dict, story_fil
         .replace("{{HERO_COVER}}", hero_cover)
         .replace("{{UNIT_TITLE_ZH}}", vocab.get("unit_title_zh", ""))
         .replace("{{UNIT_TITLE_EN}}", vocab.get("unit_title_en", ""))
+        .replace("{{UNIT_THEME_EN}}", vocab.get("unit_theme_en", ""))
+        .replace("{{UNIT_THEME_ZH}}", vocab.get("unit_theme_zh", ""))
+        .replace("{{UNIT_THEME_DISPLAY}}", _unit_theme_display(vocab))
+        .replace("{{HERO_THEME_HTML}}", _hero_theme_html(vocab))
         .replace("{{GRADE_LABEL}}", grade_label)
         .replace("{{N_THEMES}}", str(len(planner.get("themes", [])) + (1 if planner.get("review", {}).get("word_list") else 0)))
         .replace("{{TOTAL_WORDS}}", str(total_words))
         .replace("{{STORY_CARDS_HTML}}", "\n    ".join(cards))
+    )
+
+
+def _unit_theme_display(vocab: dict) -> str:
+    """组装 unit theme 在 hero 上的显示：'Go for it! · 去挑战！'。无则返回空串。"""
+    en = vocab.get("unit_theme_en", "")
+    zh = vocab.get("unit_theme_zh", "")
+    if en and zh:
+        return f"{en} · {zh}"
+    return en or zh
+
+
+def _hero_theme_html(vocab: dict) -> str:
+    """渲染 hero 里 unit theme 的 HTML 块。空则返回空串（UI 上不占位）。"""
+    display = _unit_theme_display(vocab)
+    if not display:
+        return ""
+    return (
+        f'<div class="hero-theme">'
+        f'<span class="hero-theme-label">UNIT THEME</span>'
+        f'<span class="hero-theme-text">{display}</span>'
+        f'</div>'
     )
 
 

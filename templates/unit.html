@@ -59,6 +59,29 @@
       color: rgba(255,255,255,0.9);
       margin-bottom: 12px;
     }
+    .hero-theme {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(90deg, rgba(255, 215, 0, 0.22), rgba(255, 165, 0, 0.18));
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 215, 0, 0.35);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .hero-theme-label {
+      font-size: 10px;
+      font-weight: 800;
+      color: #ffd86b;
+      letter-spacing: 1.5px;
+    }
+    .hero-theme-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: white;
+      letter-spacing: 0.3px;
+    }
     .hero-stats {
       display: flex;
       gap: 8px;
@@ -191,6 +214,7 @@
     <div class="hero-content">
       <div class="hero-title-en">{{UNIT_TITLE_EN}}</div>
       <div class="hero-title-zh">{{UNIT_TITLE_ZH}}</div>
+      {{HERO_THEME_HTML}}
       <div class="hero-stats">
         <span class="hero-stat">📖 外研版 · {{GRADE_LABEL}}</span>
         <span class="hero-stat">📚 {{TOTAL_WORDS}} 词</span>

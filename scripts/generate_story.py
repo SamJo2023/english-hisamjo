@@ -56,9 +56,11 @@ def load_prompts() -> tuple[str, str]:
 def render_user_prompt(user_tmpl: str, *,
                         theme_name_zh: str, theme_name_en: str,
                         scene_description: str, character_focus: list[str],
-                        words: list[dict], target_sentences: int) -> str:
+                        words: list[dict], target_sentences: int,
+                        unit_theme: str = "") -> str:
     word_list_lines = [f"- {w['lemma']} [{w['pos']}] — {w['gloss_zh']}" for w in words]
     return (user_tmpl
+        .replace("{{unit_theme}}", unit_theme or "(no unit theme set — skip the echo)")
         .replace("{{theme_name_zh}}", theme_name_zh)
         .replace("{{theme_name_en}}", theme_name_en)
         .replace("{{scene_description}}", scene_description)
@@ -150,6 +152,12 @@ def generate_one(
         return
 
     system, user_tmpl = load_prompts()
+    unit_theme_en = vocab.get("unit_theme_en", "")
+    unit_theme_zh = vocab.get("unit_theme_zh", "")
+    if unit_theme_en and unit_theme_zh:
+        unit_theme_str = f"{unit_theme_en} / {unit_theme_zh}"
+    else:
+        unit_theme_str = unit_theme_en or unit_theme_zh
     user_prompt = render_user_prompt(
         user_tmpl,
         theme_name_zh=theme_name_zh,
@@ -158,6 +166,7 @@ def generate_one(
         character_focus=character_focus,
         words=words_subset,
         target_sentences=target_sentences,
+        unit_theme=unit_theme_str,
     )
 
     label = "Review" if is_review else f"主题 [{theme_id}]"
