@@ -155,8 +155,10 @@ def render_unit_index_html(unit_path: str, vocab: dict, planner: dict, story_fil
         tag_text = "复习 REVIEW" if is_review else "主题 STORY"
         cover = cover_base + theme_id + ".png"
         n_unused = len(story["_meta"].get("coverage", {}).get("missing", []))
+        # 根绝对路径：避免 cleanUrls + 浏览器相对解析导致目录丢失
+        story_href = f"/generated/{unit_path}/{sf.stem}.html"
         cards.append(
-            f'<a class="story-card" href="{sf.stem}.html" style="--card-bg: url(\'{cover}\')">'
+            f'<a class="story-card" href="{story_href}" style="--card-bg: url(\'{cover}\')">'
             f'<div class="play-icon">▶</div>'
             f'<div class="story-card-content">'
             f'<span class="story-tag {tag_class}">{tag_text}</span>'
