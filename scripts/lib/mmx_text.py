@@ -17,7 +17,7 @@ import sys
 import time
 from pathlib import Path
 
-from mmx_retry import run_with_retry
+from lib.mmx_retry import run_with_retry
 
 # 强制 UTF-8 输出
 for _stream in (sys.stdout, sys.stderr):

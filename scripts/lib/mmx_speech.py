@@ -8,7 +8,7 @@ import shutil
 import sys
 from pathlib import Path
 
-from mmx_retry import run_with_retry
+from lib.mmx_retry import run_with_retry
 
 # UTF-8 输出
 for _stream in (sys.stdout, sys.stderr):
