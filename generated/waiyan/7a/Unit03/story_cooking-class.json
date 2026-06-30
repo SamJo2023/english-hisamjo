@@ -1,0 +1,95 @@
+{
+  "title_en": "The Cozy Kitchen",
+  "title_zh": "温馨厨房",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Doctor Emily Dyer smiled as Emma Woods and Naidu entered the bright kitchen.",
+      "zh": "艾米莉·戴尔医生微笑着,看着艾玛·伍兹和奈杜走进明亮的厨房。"
+    },
+    {
+      "id": "s02",
+      "en": "Today we will make pancakes, soup, and a special snack, she announced cheerfully.",
+      "zh": "今天我们要做煎饼、汤,还有一份特别的零食,她兴高采烈地宣布。"
+    },
+    {
+      "id": "s03",
+      "en": "First, Emily placed a fresh hen egg into a mixing bowl.",
+      "zh": "首先,艾米莉把一颗新鲜的鸡蛋放进搅拌碗里。"
+    },
+    {
+      "id": "s04",
+      "en": "Emma, please beat the egg until it becomes fluffy, the doctor instructed gently.",
+      "zh": "艾玛,请把鸡蛋打到变得松软,医生温柔地指导道。"
+    },
+    {
+      "id": "s05",
+      "en": "Naidu eagerly picked up a knife to slice the carrots into thin pieces.",
+      "zh": "奈杜急切地拿起刀,把胡萝卜切成薄片。"
+    },
+    {
+      "id": "s06",
+      "en": "Be careful with the blade, Emily warned with a knowing look.",
+      "zh": "小心刀刃,艾米莉意味深长地警告道。"
+    },
+    {
+      "id": "s07",
+      "en": "Meanwhile, Emily heated a large pot of broth on the back burner.",
+      "zh": "与此同时,艾米莉在后面的灶台上加热了一大锅高汤。"
+    },
+    {
+      "id": "s08",
+      "en": "The steam rose gently as the liquid began to bubble.",
+      "zh": "蒸汽轻轻升起,液体开始冒泡。"
+    },
+    {
+      "id": "s09",
+      "en": "Naidu sprinkled crushed potato chip crumbs onto the vegetables for extra flavor.",
+      "zh": "奈杜在蔬菜上撒了些碎薯片屑,增添额外的风味。"
+    },
+    {
+      "id": "s10",
+      "en": "The mixture sizzled as it touched the pan, filling the kitchen with a warm aroma.",
+      "zh": "混合物接触平底锅时发出嘶嘶声,温暖的香气弥漫整个厨房。"
+    },
+    {
+      "id": "s11",
+      "en": "Emma slowly stirred the batter while Naidu sprinkled pepper on the cooking surface.",
+      "zh": "艾玛慢慢地搅拌着面糊,而奈杜在烹饪面上撒胡椒粉。"
+    },
+    {
+      "id": "s12",
+      "en": "Naidu carefully added the sliced carrots to the simmering pot.",
+      "zh": "奈杜小心地把切好的胡萝卜放进炖锅里。"
+    },
+    {
+      "id": "s13",
+      "en": "They flipped the golden pancake onto a warm plate with wide smiles.",
+      "zh": "他们把金黄色的煎饼翻到温热的盘子上,笑容满面。"
+    },
+    {
+      "id": "s14",
+      "en": "For the sandwich, Emily sliced beef and layered fresh ingredients between soft bread.",
+      "zh": "对于三明治,艾米莉切好牛肉,把新鲜食材夹在软面包之间。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "cooking-class",
+    "theme_name_zh": "有趣的烹饪课",
+    "theme_name_en": "A Fun Cooking Class",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-30T10:33:44.851912+00:00",
+    "regeneration_count": 2,
+    "coverage": {
+      "total": 16,
+      "covered": 13,
+      "missing": [
+        "delicious",
+        "oil",
+        "stir"
+      ]
+    }
+  },
+  "schema_version": 1
+}

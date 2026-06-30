@@ -1,0 +1,527 @@
+{
+  "schema_version": 1,
+  "textbook": "waiyan",
+  "grade": "7b",
+  "unit": 3,
+  "unit_title_zh": "Unit 3 食物很重要",
+  "unit_title_en": "Food matters",
+  "topic_hint": "围绕食物、烹饪、健康饮食习惯的多故事，覆盖食材、烹饪方式、健康饮食、餐桌文化等子主题",
+  "config": {
+    "target_sentences": 51,
+    "min_occurrences_per_word": 2,
+    "tts_voice": "tianxin_xiaoling",
+    "tts_speed": 1.0
+  },
+  "words": [
+    {
+      "lemma": "delicious",
+      "pos": "adj.",
+      "gloss_zh": "令人愉快的；美味的",
+      "phonetic_uk": "dɪˈlɪʃəs",
+      "phonetic_us": "dɪˈlɪʃəs",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "taste",
+      "pos": "n.",
+      "gloss_zh": "味道",
+      "phonetic_uk": "teɪst",
+      "phonetic_us": "teɪst",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "taste",
+      "pos": "v.",
+      "gloss_zh": "有……的味道",
+      "phonetic_uk": "teɪst",
+      "phonetic_us": "teɪst",
+      "page": 37,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "beef",
+      "pos": "n.",
+      "gloss_zh": "牛肉",
+      "phonetic_uk": "biːf",
+      "phonetic_us": "biːf",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "carrot",
+      "pos": "n.",
+      "gloss_zh": "胡萝卜",
+      "phonetic_uk": "ˈkærət",
+      "phonetic_us": "ˈkærət",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "mutton",
+      "pos": "n.",
+      "gloss_zh": "羊肉",
+      "phonetic_uk": "ˈmʌtn",
+      "phonetic_us": "ˈmʌtn",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "fat",
+      "pos": "adj.",
+      "gloss_zh": "肥胖的",
+      "phonetic_uk": "fæt",
+      "phonetic_us": "fæt",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "fat",
+      "pos": "n.",
+      "gloss_zh": "脂肪",
+      "phonetic_uk": "fæt",
+      "phonetic_us": "fæt",
+      "page": 43,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "hen",
+      "pos": "n.",
+      "gloss_zh": "母鸡",
+      "phonetic_uk": "hen",
+      "phonetic_us": "hen",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "pot",
+      "pos": "n.",
+      "gloss_zh": "(通常为金属制成的圆而深的)锅",
+      "phonetic_uk": "pɒt",
+      "phonetic_us": "pɒt",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "onion",
+      "pos": "n.",
+      "gloss_zh": "洋葱(头)",
+      "phonetic_uk": "ˈʌnʃən",
+      "phonetic_us": "ˈʌnʃən",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "pancake",
+      "pos": "n.",
+      "gloss_zh": "薄煎(烤，烙)饼",
+      "phonetic_uk": "ˈpænkeɪk",
+      "phonetic_us": "ˈpænkeɪk",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "porridge",
+      "pos": "n.",
+      "gloss_zh": "粥",
+      "phonetic_uk": "ˈpɒrɪdʒ",
+      "phonetic_us": "ˈpɒrɪdʒ",
+      "page": 36,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "plain",
+      "pos": "adj.",
+      "gloss_zh": "无装饰的，简单的，朴素的，单纯的",
+      "phonetic_uk": "pleɪn",
+      "phonetic_us": "pleɪn",
+      "page": 37,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "menu",
+      "pos": "n.",
+      "gloss_zh": "(尤指餐馆的)菜单",
+      "phonetic_uk": "ˈmenjuː",
+      "phonetic_us": "ˈmenjuː",
+      "page": 37,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "medicine",
+      "pos": "n.",
+      "gloss_zh": "药，药物（尤指口服的药水）",
+      "phonetic_uk": "ˈmedsən",
+      "phonetic_us": "ˈmedsən",
+      "page": 37,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "pill",
+      "pos": "n.",
+      "gloss_zh": "药丸，药片",
+      "phonetic_uk": "pɪl",
+      "phonetic_us": "pɪl",
+      "page": 37,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "remain",
+      "pos": "v.",
+      "gloss_zh": "继续，依然（保持某种状态）",
+      "phonetic_uk": "rɪˈmeɪn",
+      "phonetic_us": "rɪˈmeɪn",
+      "page": 37,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "sandwich",
+      "pos": "n.",
+      "gloss_zh": "三明治，夹心面包",
+      "phonetic_uk": "ˈsænwɪdʒ",
+      "phonetic_us": "ˈsænwɪdʒ",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "pie",
+      "pos": "n.",
+      "gloss_zh": "水果馅饼，派",
+      "phonetic_uk": "paɪ",
+      "phonetic_us": "paɪ",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "pepper",
+      "pos": "n.",
+      "gloss_zh": "胡椒粉",
+      "phonetic_uk": "ˈpepə",
+      "phonetic_us": "ˈpepə",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "slice",
+      "pos": "n.",
+      "gloss_zh": "片，薄片，切片",
+      "phonetic_uk": "slaɪs",
+      "phonetic_us": "slaɪs",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "beat",
+      "pos": "v.",
+      "gloss_zh": "搅拌，搅打",
+      "phonetic_uk": "biːt",
+      "phonetic_us": "biːt",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "salt",
+      "pos": "n.",
+      "gloss_zh": "盐，食盐",
+      "phonetic_uk": "sɔːlt",
+      "phonetic_us": "sɔːlt",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "oil",
+      "pos": "n.",
+      "gloss_zh": "植物油，动物油",
+      "phonetic_uk": "ɔɪl",
+      "phonetic_us": "ɔɪl",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "pan",
+      "pos": "n.",
+      "gloss_zh": "(长柄有盖的)锅，平底锅",
+      "phonetic_uk": "pæn",
+      "phonetic_us": "pæn",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "mixture",
+      "pos": "n.",
+      "gloss_zh": "(尤指烹饪中的)混合液，混合料",
+      "phonetic_uk": "ˈmɪkstʃə",
+      "phonetic_us": "ˈmɪkstʃə",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "stir",
+      "pos": "v.",
+      "gloss_zh": "搅，搅拌，搅动",
+      "phonetic_uk": "stɜː",
+      "phonetic_us": "stɜː",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "plate",
+      "pos": "n.",
+      "gloss_zh": "盘，碟",
+      "phonetic_uk": "pleɪt",
+      "phonetic_us": "pleɪt",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "firm",
+      "pos": "adj.",
+      "gloss_zh": "结实的，坚实的",
+      "phonetic_uk": "fɜːm",
+      "phonetic_us": "fɜːm",
+      "page": 39,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "recipe",
+      "pos": "n.",
+      "gloss_zh": "烹饪法；食谱",
+      "phonetic_uk": "ˈresəpi",
+      "phonetic_us": "ˈresəpi",
+      "page": 40,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "ingredient",
+      "pos": "n.",
+      "gloss_zh": "(烹调用的)成分，食材",
+      "phonetic_uk": "ɪnˈɡriːdiənt",
+      "phonetic_us": "ɪnˈɡriːdiənt",
+      "page": 40,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "diet",
+      "pos": "n.",
+      "gloss_zh": "日常饮食，日常食物",
+      "phonetic_uk": "ˈdaɪət",
+      "phonetic_us": "ˈdaɪət",
+      "page": 41,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "salad",
+      "pos": "n.",
+      "gloss_zh": "蔬菜沙拉",
+      "phonetic_uk": "ˈsæləd",
+      "phonetic_us": "ˈsæləd",
+      "page": 41,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "hamburger",
+      "pos": "n.",
+      "gloss_zh": "汉堡包",
+      "phonetic_uk": "ˈhæmbɜːɡə",
+      "phonetic_us": "ˈhæmbɜːɡə",
+      "page": 42,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "snack",
+      "pos": "n.",
+      "gloss_zh": "(正餐以外的)小吃，点心",
+      "phonetic_uk": "snæk",
+      "phonetic_us": "snæk",
+      "page": 43,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "chip",
+      "pos": "n.",
+      "gloss_zh": "炸马铃薯条",
+      "phonetic_uk": "tʃɪp",
+      "phonetic_us": "tʃɪp",
+      "page": 43,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "dangerous",
+      "pos": "adj.",
+      "gloss_zh": "危险的，有危害的",
+      "phonetic_uk": "ˈdeɪndʒərəs",
+      "phonetic_us": "ˈdeɪndʒərəs",
+      "page": 43,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "border",
+      "pos": "n.",
+      "gloss_zh": "边界；边境",
+      "phonetic_uk": "ˈbɔːdə",
+      "phonetic_us": "ˈbɔːdə",
+      "page": 44,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "Western",
+      "pos": "adj.",
+      "gloss_zh": "(观念或方式)西方的，欧美的",
+      "phonetic_uk": "ˈwestən",
+      "phonetic_us": "ˈwestən",
+      "page": 44,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "dessert",
+      "pos": "n.",
+      "gloss_zh": "(饭后的)甜点，甜食，甜品",
+      "phonetic_uk": "dɪˈzɜːt",
+      "phonetic_us": "dɪˈzɜːt",
+      "page": 44,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "dynasty",
+      "pos": "n.",
+      "gloss_zh": "朝代",
+      "phonetic_uk": "ˈdɪnəsti",
+      "phonetic_us": "ˈdɪnəsti",
+      "page": 44,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "store",
+      "pos": "v.",
+      "gloss_zh": "贮藏，贮存，积蓄",
+      "phonetic_uk": "stoː",
+      "phonetic_us": "stoː",
+      "page": 44,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "folk",
+      "pos": "adj.",
+      "gloss_zh": "民间的，民俗的",
+      "phonetic_uk": "fəʊk",
+      "phonetic_us": "fəʊk",
+      "page": 44,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "tale",
+      "pos": "n.",
+      "gloss_zh": "故事",
+      "phonetic_uk": "teɪl",
+      "phonetic_us": "teɪl",
+      "page": 44,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "emperor",
+      "pos": "n.",
+      "gloss_zh": "皇帝",
+      "phonetic_uk": "ˈempərə",
+      "phonetic_us": "ˈempərə",
+      "page": 44,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "stomach",
+      "pos": "n.",
+      "gloss_zh": "胃",
+      "phonetic_uk": "ˈstʌmək",
+      "phonetic_us": "ˈstʌmək",
+      "page": 44,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "Iranian",
+      "pos": "n.",
+      "gloss_zh": "伊朗人",
+      "phonetic_uk": "ɪˈreɪniən",
+      "phonetic_us": "ɪˈreɪniən",
+      "page": 45,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "flat",
+      "pos": "adj.",
+      "gloss_zh": "平的，平坦的",
+      "phonetic_uk": "flaet",
+      "phonetic_us": "flaet",
+      "page": 45,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "twin",
+      "pos": "adj.",
+      "gloss_zh": "双胞胎之一的",
+      "phonetic_uk": "twɪn",
+      "phonetic_us": "twɪn",
+      "page": 45,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "bridge",
+      "pos": "n.",
+      "gloss_zh": "(事物之间的)桥梁，纽带；桥",
+      "phonetic_uk": "brɪdʒ",
+      "phonetic_us": "brɪdʒ",
+      "page": 45,
+      "is_phrase": false,
+      "accept_forms": []
+    }
+  ]
+}

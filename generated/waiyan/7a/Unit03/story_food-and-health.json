@@ -1,0 +1,71 @@
+{
+  "title_en": "A Healthy Diet",
+  "title_zh": "健康的饮食",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Emma Woods walked into Doctor Emily Dyer's office, holding her stomach in pain.",
+      "zh": "艾玛·伍兹走进艾米莉·戴尔医生的诊所,捂着胃部,一脸痛苦。"
+    },
+    {
+      "id": "s02",
+      "en": "\"What did you eat for breakfast?\" Emily asked, looking at her patient with concern.",
+      "zh": "\"你早餐吃了什么?\"艾米莉问道,她关切地看着自己的病人。"
+    },
+    {
+      "id": "s03",
+      "en": "Emma frowned. \"I had fried dumplings and a big burger. They tasted so good!\"",
+      "zh": "艾玛皱着眉头。\"我吃了炸饺子和一个大汉堡。它们的味道好极了!\""
+    },
+    {
+      "id": "s04",
+      "en": "Emily shook her head gently. \"That much fat in your food can hurt your stomach.\"",
+      "zh": "艾米莉轻轻摇了摇头。\"你食物里那么多脂肪会伤到你的胃。\""
+    },
+    {
+      "id": "s05",
+      "en": "She handed Emma a small pill from a bottle on her desk.",
+      "zh": "她从桌上的药瓶里拿出一粒药丸递给艾玛。"
+    },
+    {
+      "id": "s06",
+      "en": "\"This medicine will help now, but you need a better diet,\" Emily explained.",
+      "zh": "\"这个药现在会有帮助,但你需要更好的日常饮食,\"艾米莉解释道。"
+    },
+    {
+      "id": "s07",
+      "en": "Emma looked surprised. \"No more burgers? What should I eat instead?\"",
+      "zh": "艾玛看起来很惊讶。\"不能再吃汉堡了?那我应该吃什么?\""
+    },
+    {
+      "id": "s08",
+      "en": "Emily smiled and held up a plate of salad. \"Plain vegetables are gentle on your stomach.\"",
+      "zh": "艾米莉微笑着举起一盘蔬菜沙拉。\"清淡的蔬菜对你的胃很温和。\""
+    },
+    {
+      "id": "s09",
+      "en": "Emma took a bite of the salad. The taste was simple, but it felt right.",
+      "zh": "艾玛尝了一口沙拉。味道很简单,但感觉是对的。"
+    },
+    {
+      "id": "s10",
+      "en": "\"A healthy diet keeps your body firm and strong,\" Emily said, \"and your stomach will feel flat and comfortable.\"",
+      "zh": "\"健康的饮食让你的身体结实又强壮,\"艾米莉说,\"而且你的胃会感到平坦舒适。\""
+    }
+  ],
+  "_meta": {
+    "theme_id": "food-and-health",
+    "theme_name_zh": "健康的饮食",
+    "theme_name_en": "A Healthy Diet",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-30T10:34:19.270197+00:00",
+    "regeneration_count": 2,
+    "coverage": {
+      "total": 11,
+      "covered": 9,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

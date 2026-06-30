@@ -1,0 +1,66 @@
+{
+  "title_en": "At the Manor",
+  "title_zh": "在庄园",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "The sun set over the manor, turning the dining room golden.",
+      "zh": "夕阳西下,庄园的餐厅染成了金色。"
+    },
+    {
+      "id": "s02",
+      "en": "Orpheus, Serveran, and Naidu sat around a plain wooden table, sharing warm dessert.",
+      "zh": "奥菲斯、瑟维兰和奈杜围坐在一张朴素的木桌旁,一起分享着温热的甜点。"
+    },
+    {
+      "id": "s03",
+      "en": "\"Iranian families store warm memories in sweets for celebrations,\" Orpheus said softly.",
+      "zh": "奥菲斯轻声说:\"伊朗家庭会把温暖的回忆贮藏在甜点里,用于庆祝。\""
+    },
+    {
+      "id": "s04",
+      "en": "Serveran nodded and offered a Western tale about a hero crossing twin bridges.",
+      "zh": "瑟维兰点点头,讲了一个西方的故事,讲述一位英雄穿越双桥。"
+    },
+    {
+      "id": "s05",
+      "en": "\"Do you think those bridges are dangerous?\" Naidu asked, looking at the river below.",
+      "zh": "奈杜看着桥下的河水,问道:\"你觉得那些桥危险吗?\""
+    },
+    {
+      "id": "s06",
+      "en": "\"Some bridges are dangerous,\" Orpheus warned, \"but they bridge our worlds together.\"",
+      "zh": "奥菲斯警告说:\"有些桥是危险的,但它们把我们的世界连接在一起。\""
+    },
+    {
+      "id": "s07",
+      "en": "The candles flickered softly on the table, casting dancing shadows across the walls.",
+      "zh": "桌上的蜡烛轻轻摇曳,在墙上投下舞动的影子。"
+    },
+    {
+      "id": "s08",
+      "en": "Serveran smiled at Naidu. \"Tell us a tale from your culture next time.\"",
+      "zh": "瑟维兰对奈杜微笑着说:\"下次给我们讲讲你们文化的故事吧。\""
+    },
+    {
+      "id": "s09",
+      "en": "The evening remained warm and safe as they finished their dessert together.",
+      "zh": "大家一起吃完甜点,夜色依然温暖而安全。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "review",
+    "theme_name_zh": "在庄园",
+    "theme_name_en": "At the Manor",
+    "is_review": true,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-30T10:35:06.682122+00:00",
+    "regeneration_count": 0,
+    "coverage": {
+      "total": 10,
+      "covered": 10,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

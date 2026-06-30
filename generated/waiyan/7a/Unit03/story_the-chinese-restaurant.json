@@ -1,0 +1,86 @@
+{
+  "title_en": "The Mysterious Chinese Restaurant",
+  "title_zh": "神秘的中餐厅",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "The rain drummed against the windows as philanthropist Kreacher Pierson pushed open the door of a mysterious Chinese restaurant.",
+      "zh": "雨点敲打着窗户,慈善家克雷彻·皮尔森推开了一扇神秘中餐厅的门。"
+    },
+    {
+      "id": "s02",
+      "en": "A warm smell of onion and mutton filled the air, and Emma Woods smiled from behind the counter.",
+      "zh": "空气中弥漫着洋葱和羊肉的温暖香气,艾玛·伍兹从柜台后微笑着迎上来。"
+    },
+    {
+      "id": "s03",
+      "en": "\"Welcome,\" she said softly. \"Tonight I will share a folk tale from the Tang dynasty.\"",
+      "zh": "\"欢迎,\"她轻声说道,\"今晚我要分享一个唐朝的民间故事。\""
+    },
+    {
+      "id": "s04",
+      "en": "Orpheus, the detective, glanced at the menu lying on the table , it listed ancient recipes alongside hamburgers and sandwiches.",
+      "zh": "侦探奥菲斯看了看桌上的菜单,,上面列着古老的食谱,还有汉堡包和三明治。"
+    },
+    {
+      "id": "s05",
+      "en": "The restaurant sat on the border of the old town, its walls decorated with faded paintings of emperors.",
+      "zh": "餐厅坐落在老城的边境,墙上装饰着褪色的皇帝画像。"
+    },
+    {
+      "id": "s06",
+      "en": "Emma brought them a steaming bowl of porridge and a golden pancake still warm from the pan.",
+      "zh": "艾玛给他们端来了一碗热气腾腾的粥和一张刚从锅里拿出来的金黄色薄煎饼。"
+    },
+    {
+      "id": "s07",
+      "en": "\"This pie,\" she whispered, \"was once made for an emperor who loved sweet and salty flavors.\"",
+      "zh": "\"这个馅饼,\"她低声说,\"曾经是为一位喜欢甜咸口味的皇帝做的。\""
+    },
+    {
+      "id": "s08",
+      "en": "Kreacher lifted a spoon and added a pinch of salt to the porridge, curious about the taste.",
+      "zh": "克雷彻拿起勺子,往粥里加了一撮盐,对味道感到好奇。"
+    },
+    {
+      "id": "s09",
+      "en": "Emma explained that her family recipe had been passed down through every dynasty for centuries.",
+      "zh": "艾玛解释说,她的家族食谱已经代代相传,经历了每一个朝代,历经数百年。"
+    },
+    {
+      "id": "s10",
+      "en": "Detective Orpheus noticed a shadow moving behind the kitchen border, his eyes narrowing.",
+      "zh": "侦探奥菲斯注意到厨房边境后面有个影子在移动,他眯起了眼睛。"
+    },
+    {
+      "id": "s11",
+      "en": "A folk melody drifted from somewhere above, filling the room with ancient echoes.",
+      "zh": "一首民歌从某个地方飘来,在房间里回荡着古老的声音。"
+    },
+    {
+      "id": "s12",
+      "en": "\"This place stands at the border between the past and the present,\" Emma said, her eyes twinkling.",
+      "zh": "\"这个地方位于过去和现在的交界处,\"艾玛说,眼中闪烁着光芒。"
+    },
+    {
+      "id": "s13",
+      "en": "As the last drop of porridge disappeared, Orpheus smiled and said, \"Some mysteries taste better than answers.\"",
+      "zh": "当最后一滴粥消失时,奥菲斯微笑着说:\"有些谜题,比答案更美味。\""
+    }
+  ],
+  "_meta": {
+    "theme_id": "the-chinese-restaurant",
+    "theme_name_zh": "神秘的中餐厅",
+    "theme_name_en": "The Mysterious Chinese Restaurant",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-30T10:30:12.665915+00:00",
+    "regeneration_count": 0,
+    "coverage": {
+      "total": 14,
+      "covered": 14,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

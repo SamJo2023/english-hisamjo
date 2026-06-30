@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "theme_id": "food-and-health",
+  "story_sha256": "a776469035f1894c",
+  "voice": "tianxin_xiaoling",
+  "speed": 1.0,
+  "total_sentences": 10,
+  "generated_count": 10,
+  "skipped_count": 0,
+  "failed_count": 0,
+  "failed_sentences": []
+}

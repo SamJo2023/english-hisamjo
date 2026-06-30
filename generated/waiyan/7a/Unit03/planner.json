@@ -1,0 +1,109 @@
+{
+  "themes": [
+    {
+      "id": "the-chinese-restaurant",
+      "name_en": "The Mysterious Chinese Restaurant",
+      "name_zh": "神秘的中餐厅",
+      "scene_description": "Philanthropist Kreacher Pierson and Detective Orpheus visit a mysterious Chinese restaurant. The owner, Emma Woods, serves dishes from different dynasties while sharing folk tales about ancient emperors.",
+      "character_focus": [
+        "Kreacher Pierson",
+        "Orpheus",
+        "Emma Woods"
+      ],
+      "theme_class": "mystery",
+      "word_list": [
+        "border",
+        "dynasty",
+        "emperor",
+        "folk",
+        "hamburger",
+        "menu",
+        "mutton",
+        "onion",
+        "pancake",
+        "pie",
+        "porridge",
+        "recipe",
+        "salt",
+        "sandwich"
+      ]
+    },
+    {
+      "id": "cooking-class",
+      "name_en": "A Fun Cooking Class",
+      "name_zh": "有趣的烹饪课",
+      "scene_description": "Doctor Emily Dyer teaches Emma Woods and Mercenary Naidu how to cook in a bright kitchen. They learn to beat, stir, and slice ingredients to make delicious pancakes and sandwiches together.",
+      "character_focus": [
+        "Emily Dyer",
+        "Emma Woods",
+        "Naidu"
+      ],
+      "theme_class": "encouragement",
+      "word_list": [
+        "beat",
+        "beef",
+        "carrot",
+        "chip",
+        "delicious",
+        "hen",
+        "ingredient",
+        "mixture",
+        "oil",
+        "pan",
+        "pepper",
+        "plate",
+        "pot",
+        "slice",
+        "snack",
+        "stir"
+      ]
+    },
+    {
+      "id": "food-and-health",
+      "name_en": "A Healthy Diet",
+      "name_zh": "健康的饮食",
+      "scene_description": "Doctor Emily Dyer gives Emma Woods important advice about food and health. She explains why a plain diet with more vegetables and less fat is better for the stomach.",
+      "character_focus": [
+        "Emily Dyer",
+        "Emma Woods"
+      ],
+      "theme_class": "choice",
+      "word_list": [
+        "diet",
+        "fat",
+        "flat",
+        "firm",
+        "medicine",
+        "pill",
+        "salad",
+        "stomach",
+        "taste"
+      ]
+    }
+  ],
+  "review": {
+    "id": "review",
+    "name_en": "At the Manor",
+    "name_zh": "在庄园",
+    "scene_description": "As the sun sets over the manor, the group enjoys dessert together. Orpheus and Magician Serveran share stories about different cultures, while Naidu wonders about the twin bridges that connect their worlds.",
+    "character_focus": [
+      "Orpheus",
+      "Serveran",
+      "Naidu"
+    ],
+    "theme_class": "review",
+    "word_list": [
+      "Iranian",
+      "Western",
+      "bridge",
+      "dangerous",
+      "dessert",
+      "plain",
+      "remain",
+      "store",
+      "tale",
+      "twin"
+    ]
+  },
+  "schema_version": 1
+}

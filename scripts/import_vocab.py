@@ -111,6 +111,74 @@ def parse_md(path: Path) -> list[dict]:
     return words
 
 
+def is_md_table(path: Path) -> bool:
+    """判断 .md 文件是否为表格格式（任意数据行以 | 开头）。"""
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.strip().startswith("|"):
+            return True
+    return False
+
+
+def parse_md_table(path: Path) -> list[dict]:
+    """从 Markdown 表格格式解析词条。期望 5 列：单词, 音标, 词性, 释义, 页码。
+
+    格式示例：
+        | 单词 | 音标 | 词性 | 释义 | 页码 |
+        | :--- | :--- | :--- | :--- | :--- |
+        | delicious | /dɪˈlɪʃəs/ | adj. | 令人愉快的；美味的 | 36 |
+    """
+    words = []
+    errors = []
+    rows = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        stripped = line.strip()
+        if not stripped.startswith("|"):
+            continue
+        # 跳过分隔行 (|:---| 或 |---|)
+        if re.match(r"^\|[\s:|-]+\|?\s*$", stripped):
+            continue
+        cells = [c.strip() for c in stripped.strip("|").split("|")]
+        rows.append(cells)
+
+    # 第一行是表头，跳过（其列名非数字）
+    for row_idx, cells in enumerate(rows):
+        if row_idx == 0:
+            continue
+        if len(cells) < 5:
+            errors.append(f"  row {row_idx + 1}: 列数不足 5 → {cells}")
+            continue
+        lemma = cells[0].strip()
+        if not lemma:
+            continue
+        phon = cells[1].strip().strip("/")
+        pos = cells[2].strip()
+        gloss = cells[3].strip()
+        page_str = cells[4].strip()
+        try:
+            page = int(page_str)
+        except ValueError:
+            errors.append(f"  row {row_idx + 1}: 页码不是数字 → {page_str}")
+            continue
+        if not pos.endswith("."):
+            pos = pos + "."
+        is_phrase = " " in lemma or "-" in lemma or pos == "phr."
+        words.append({
+            "lemma": lemma,
+            "pos": pos,
+            "gloss_zh": gloss,
+            "phonetic_uk": phon,
+            "phonetic_us": phon,
+            "page": page,
+            "is_phrase": is_phrase,
+            "accept_forms": [],
+        })
+    if errors:
+        print("⚠️  以下行未解析（请检查格式）：", file=sys.stderr)
+        for e in errors:
+            print(e, file=sys.stderr)
+    return words
+
+
 def parse_csv(path: Path) -> list[dict]:
     """从 .csv 文件解析词条列表。期望列：word, phonetic, pos, gloss_zh。"""
     words = []
@@ -158,7 +226,7 @@ def main():
         sys.exit(1)
 
     if src.suffix.lower() == ".md":
-        words = parse_md(src)
+        words = parse_md_table(src) if is_md_table(src) else parse_md(src)
     elif src.suffix.lower() == ".csv":
         words = parse_csv(src)
     else:

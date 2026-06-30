@@ -38,3 +38,5 @@ pipeline.log
 # But ignore temp files in generated/
 generated/**/*.tmp
 generated/**/*.partial
+
+.vercel
