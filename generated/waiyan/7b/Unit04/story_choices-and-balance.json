@@ -1,0 +1,71 @@
+{
+  "title_en": "Emma Woods Learns to Choose",
+  "title_zh": "艾玛·伍兹学会选择",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Emma Woods sat at her desk, feeling confused about her long list of daily activities.",
+      "zh": "艾玛·伍兹坐在桌前,对着长长的日常活动清单感到困惑。"
+    },
+    {
+      "id": "s02",
+      "en": "Detective Orpheus walked in and smiled warmly. \"You seem troubled,\" he said gently.",
+      "zh": "侦探俄耳甫斯走进来,温暖地微笑着。\"你看起来很困扰,\"他温柔地说。"
+    },
+    {
+      "id": "s03",
+      "en": "\"I want to do everything,\" Emma explained, unable to imagine how she could fit it all in.",
+      "zh": "\"我想做所有事情,\"艾玛解释道,想象不出怎样才能全部完成。"
+    },
+    {
+      "id": "s04",
+      "en": "\"That is natural,\" Orpheus replied, \"but we must learn to choose what truly matters.\"",
+      "zh": "\"这是很自然的,\"俄耳甫斯回答说,\"但我们必须学会选择真正重要的事情。\""
+    },
+    {
+      "id": "s05",
+      "en": "Serveran, the quiet assistant, placed a fresh sheet on the table. \"Let us organize your interests.\"",
+      "zh": "安静的助手塞维兰把一张新纸放在桌上。\"让我们整理一下你的兴趣。\""
+    },
+    {
+      "id": "s06",
+      "en": "Together they made a balanced list with housework, study time, and fun activities mixed together.",
+      "zh": "他们一起制定了一份平衡的清单,把家务、学习时间和有趣的活动混合在一起。"
+    },
+    {
+      "id": "s07",
+      "en": "Orpheus pointed to each item. \"Able people know how to set priorities,\" he explained kindly.",
+      "zh": "俄耳甫斯指着每一项。\"有能力的人知道如何设定优先级,\"他亲切地解释道。"
+    },
+    {
+      "id": "s08",
+      "en": "Emma noticed the schedule took a fair form, with work in the morning and play in the afternoon.",
+      "zh": "艾玛注意到日程安排得很公平,上午工作,下午玩耍。"
+    },
+    {
+      "id": "s09",
+      "en": "\"I feel confident now,\" Emma said, happy with her choice of a balanced daily plan.",
+      "zh": "\"我现在感到自信了,\"艾玛说,对她选择的平衡日常计划感到满意。"
+    },
+    {
+      "id": "s10",
+      "en": "Orpheus nodded approvingly. \"Balance is the secret to making good decisions every day.\"",
+      "zh": "俄耳甫斯赞许地点点头。\"平衡是每天做出好决策的秘诀。\""
+    }
+  ],
+  "_meta": {
+    "theme_id": "choices-and-balance",
+    "theme_name_zh": "学会选择",
+    "theme_name_en": "Learning to Choose",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-30T15:04:13.332099+00:00",
+    "regeneration_count": 1,
+    "coverage": {
+      "total": 11,
+      "covered": 11,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

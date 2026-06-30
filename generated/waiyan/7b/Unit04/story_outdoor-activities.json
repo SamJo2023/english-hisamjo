@@ -1,0 +1,73 @@
+{
+  "title_en": "A Perfect Day in the Garden",
+  "title_zh": "花园里的完美一天",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Emma Woods invited her friends to enjoy the fresh spring air in the manor garden.",
+      "zh": "艾玛·伍兹邀请她的朋友们在庄园花园里享受新鲜的春日空气。"
+    },
+    {
+      "id": "s02",
+      "en": "Together, they hiked along the winding nature trails surrounded by blooming flowers.",
+      "zh": "他们一起沿着蜿蜒的小径徒步,周围是盛开的花朵。"
+    },
+    {
+      "id": "s03",
+      "en": "Colorful butterflies fluttered everywhere, and small insects buzzed happily around the roses.",
+      "zh": "五彩缤纷的蝴蝶到处飞舞,小昆虫在玫瑰丛周围欢快地嗡嗡叫。"
+    },
+    {
+      "id": "s04",
+      "en": "A pesky mosquito bit Naidu right on the neck, leaving it feeling sore.",
+      "zh": "一只讨厌的蚊子在奈杜的脖子上咬了一口,让他感到酸痛。"
+    },
+    {
+      "id": "s05",
+      "en": "The group laughed and decided to jog around the garden to warm up.",
+      "zh": "大家笑了,决定绕着花园慢跑热身。"
+    },
+    {
+      "id": "s06",
+      "en": "Then Serveran set up a tennis net on the soft green grass.",
+      "zh": "然后塞维兰在柔软的绿草地上架起了网球网。"
+    },
+    {
+      "id": "s07",
+      "en": "The sunshine and fresh air lifted Naidu's spirits as he forgot his sore neck.",
+      "zh": "阳光和新鲜的空气提振了奈杜的精神,他忘记了脖子的酸痛。"
+    },
+    {
+      "id": "s08",
+      "en": "Emma watched her friends play tennis while butterflies danced in the warm light.",
+      "zh": "艾玛看着她的朋友们打网球,蝴蝶在温暖的阳光下翩翩起舞。"
+    },
+    {
+      "id": "s09",
+      "en": "Though Naidu's neck was still sore, the beautiful garden made him smile.",
+      "zh": "虽然奈杜的脖子仍然酸痛,但美丽的花园让他微笑了。"
+    },
+    {
+      "id": "s10",
+      "en": "It was a perfect day, and the fresh air lifted their hearts together.",
+      "zh": "这是完美的一天,新鲜的空气一起提振了他们的心灵。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "outdoor-activities",
+    "theme_name_zh": "花园里的一天",
+    "theme_name_en": "A Day in the Garden",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-30T15:02:56.452067+00:00",
+    "regeneration_count": 2,
+    "coverage": {
+      "total": 11,
+      "covered": 10,
+      "missing": [
+        "lift sb's spirits"
+      ]
+    }
+  },
+  "schema_version": 1
+}

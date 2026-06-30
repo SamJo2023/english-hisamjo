@@ -1,0 +1,66 @@
+{
+  "title_en": "The Couch Potato Debate",
+  "title_zh": "沙发土豆之争",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Doctor Emily Dyer arrived at Kreacher Pierson's house and found him sunk deep into the couch.",
+      "zh": "埃米莉·戴尔医生来到克雷彻·皮尔森的家里,发现他整个人陷在沙发里。"
+    },
+    {
+      "id": "s02",
+      "en": "The screen glowed bright while Kreacher lazily flipped through a magazine.",
+      "zh": "屏幕发出明亮的光,而克雷彻懒洋洋地翻着一本杂志。"
+    },
+    {
+      "id": "s03",
+      "en": "\"Is this your daily life?\" Emily asked, feeling bored already.",
+      "zh": "\"这就是你的日常生活吗?\"埃米莉问道,已经感到无聊了。"
+    },
+    {
+      "id": "s04",
+      "en": "\"Pretty much,\" Kreacher replied, reaching for a novel beside him.",
+      "zh": "\"差不多吧,\"克雷彻回答,伸手去拿旁边的一本小说。"
+    },
+    {
+      "id": "s05",
+      "en": "\"Your social life seems dull,\" Emily said, pointing at the endless media playing in the background.",
+      "zh": "\"你的社交生活似乎很乏味,\"埃米莉说,指着背景里没完没了播放的媒体节目。"
+    },
+    {
+      "id": "s06",
+      "en": "Naidu walked in and laughed. \"Still a couch potato, I see!\"",
+      "zh": "奈杜走了进来,笑着说:\"我看你还是个沙发土豆!\""
+    },
+    {
+      "id": "s07",
+      "en": "Emily grabbed Kreacher's arm and pulled him up from the couch.",
+      "zh": "埃米莉抓住克雷彻的手臂,把他从沙发上拉了起来。"
+    },
+    {
+      "id": "s08",
+      "en": "\"Come on, let's do something active instead,\" she insisted.",
+      "zh": "\"来吧,我们去做点活跃的事情,\"她坚持说。"
+    },
+    {
+      "id": "s09",
+      "en": "Together, the three friends stepped outside into the sunshine, leaving the screen and couch behind forever.",
+      "zh": "三个朋友一起走进阳光里,永远地离开了屏幕和沙发。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "screen-time",
+    "theme_name_zh": "沙发土豆之争",
+    "theme_name_en": "The Couch Potato Debate",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-30T15:03:27.886355+00:00",
+    "regeneration_count": 0,
+    "coverage": {
+      "total": 10,
+      "covered": 10,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

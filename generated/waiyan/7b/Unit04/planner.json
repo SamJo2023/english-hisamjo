@@ -1,0 +1,125 @@
+{
+  "themes": [
+    {
+      "id": "outdoor-activities",
+      "name_en": "A Day in the Garden",
+      "name_zh": "花园里的一天",
+      "scene_description": "Emma Woods invites her friends to enjoy the fresh spring air in the manor garden. They hike through nature trails, jog around the garden, and play tennis on the grass. Emma notices butterflies and insects flying everywhere, though the mosquitoes bother Naidu's neck, making it sore. Despite the small discomfort, the sunshine and fresh air lift everyone's spirits.",
+      "character_focus": [
+        "Emma Woods",
+        "Mercenary Naidu",
+        "Magician Serveran"
+      ],
+      "theme_class": "encouragement",
+      "word_list": [
+        "butterfly",
+        "fresh",
+        "hike",
+        "insect",
+        "jog",
+        "lift",
+        "lift sb's spirits",
+        "mosquito",
+        "neck",
+        "sore",
+        "tennis"
+      ]
+    },
+    {
+      "id": "screen-time",
+      "name_en": "The Couch Potato Debate",
+      "name_zh": "沙发土豆之争",
+      "scene_description": "Doctor Emily Dyer visits her friend Kreacher Pierson, who spends all day as a couch potato watching screen entertainment. Emily finds his daily life quite boring. Kreacher reads magazines and novels while the media plays in the background. Emily thinks this social life is dull and suggests they do something more active instead.",
+      "character_focus": [
+        "Doctor Emily Dyer",
+        "Philanthropist Kreacher Pierson",
+        "Mercenary Naidu"
+      ],
+      "theme_class": "chocolate",
+      "word_list": [
+        "bored",
+        "couch",
+        "couch potato",
+        "daily life",
+        "dull",
+        "magazine",
+        "media",
+        "novel",
+        "screen",
+        "social"
+      ]
+    },
+    {
+      "id": "choices-and-balance",
+      "name_en": "Learning to Choose",
+      "name_zh": "学会选择",
+      "scene_description": "Detective Orpheus teaches young Emma about making balanced choices in life. She must choose her interests wisely and set goals each day. The list of daily activities includes both work and play. With imagination and feeling, Emma learns she is able to balance housework with fun. She makes a number of good decisions.",
+      "character_focus": [
+        "Detective Orpheus",
+        "Emma Woods",
+        "Serveran"
+      ],
+      "theme_class": "choice",
+      "word_list": [
+        "able",
+        "balanced",
+        "choose",
+        "daily",
+        "feeling",
+        "form",
+        "housework",
+        "imagine",
+        "interest",
+        "list",
+        "set"
+      ]
+    },
+    {
+      "id": "manor-mystery",
+      "name_en": "The Strange Prince",
+      "name_zh": "奇怪的王子",
+      "scene_description": "At the mysterious manor, Orpheus notices a prince who seems deaf to all warnings. He sits alone in a dark corner, looking dull and lifeless. At that moment, a monster appears. Orpheus wonders if the prince might be in danger. Be deaf to the silence, Orpheus thinks to himself. This unforgettable night leaves everyone wondering about the prince's secret.",
+      "character_focus": [
+        "Detective Orpheus",
+        "the mysterious prince",
+        "Magician Serveran"
+      ],
+      "theme_class": "mystery",
+      "word_list": [
+        "alone",
+        "deaf",
+        "monster",
+        "moment",
+        "notice",
+        "ours",
+        "prince",
+        "unforgettable"
+      ]
+    }
+  ],
+  "review": {
+    "id": "review",
+    "name_en": "At the Manor Gates",
+    "name_zh": "在庄园门口",
+    "scene_description": "As sunset approaches, the group gathers at the manor gates. A number of questions remain unanswered. They might explore further tomorrow. Emma notices the solar lights turning on. Who owns this place? Is it ours? The mysterious tool on the ground catches Orpheus's eye. Perhaps tonight will bring new answers.",
+    "character_focus": [
+      "Emma Woods",
+      "Detective Orpheus",
+      "Serveran"
+    ],
+    "theme_class": "review",
+    "word_list": [
+      "a number of",
+      "be deaf to sth",
+      "funny",
+      "invite",
+      "large",
+      "might",
+      "number",
+      "solar",
+      "tool",
+      "youthful"
+    ]
+  },
+  "schema_version": 1
+}

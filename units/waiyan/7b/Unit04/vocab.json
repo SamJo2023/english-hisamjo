@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "textbook": "waiyan",
+  "grade": "7b",
+  "unit": 4,
+  "unit_title_zh": "娱乐的艺术",
+  "unit_title_en": "The art of having fun",
+  "topic_hint": "",
+  "config": {
+    "target_sentences": 50,
+    "min_occurrences_per_word": 2,
+    "tts_voice": "tianxin_xiaoling",
+    "tts_speed": 1.0
+  },
+  "words": [
+    {
+      "lemma": "dull",
+      "pos": "adj.",
+      "gloss_zh": "愚笨的，迟钝的",
+      "phonetic_uk": "dʌl",
+      "phonetic_us": "dʌl",
+      "page": 53,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "imagine",
+      "pos": "v.",
+      "gloss_zh": "想象",
+      "phonetic_uk": "ɪˈmædʒɪn",
+      "phonetic_us": "ɪˈmædʒɪn",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "alone",
+      "pos": "adv.",
+      "gloss_zh": "单独，独自",
+      "phonetic_uk": "əˈləʊn",
+      "phonetic_us": "əˈləʊn",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "might",
+      "pos": "v.",
+      "gloss_zh": "也许，可能，大概",
+      "phonetic_uk": "maɪt",
+      "phonetic_us": "maɪt",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "tool",
+      "pos": "n.",
+      "gloss_zh": "工具",
+      "phonetic_uk": "tuːl",
+      "phonetic_us": "tuːl",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "list",
+      "pos": "n.",
+      "gloss_zh": "名单，清单，目录",
+      "phonetic_uk": "lɪst",
+      "phonetic_us": "lɪst",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "choose",
+      "pos": "v.",
+      "gloss_zh": "挑选，选择",
+      "phonetic_uk": "tʃuːz",
+      "phonetic_us": "tʃuːz",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "novel",
+      "pos": "n.",
+      "gloss_zh": "(长篇)小说",
+      "phonetic_uk": "ˈnɒvəl",
+      "phonetic_us": "ˈnɒvəl",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "magazine",
+      "pos": "n.",
+      "gloss_zh": "杂志，期刊",
+      "phonetic_uk": "ˌmægəˈziːn",
+      "phonetic_us": "ˌmægəˈziːn",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "solar",
+      "pos": "adj.",
+      "gloss_zh": "利用太阳能的",
+      "phonetic_uk": "ˈsəʊlə",
+      "phonetic_us": "ˈsəʊlə",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "media",
+      "pos": "n.",
+      "gloss_zh": "媒体；传媒",
+      "phonetic_uk": "ˈmiːdiə",
+      "phonetic_us": "ˈmiːdiə",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "bored",
+      "pos": "adj.",
+      "gloss_zh": "厌烦的，不感兴趣的；烦闷的",
+      "phonetic_uk": "bɔːd",
+      "phonetic_us": "bɔːd",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "feeling",
+      "pos": "n.",
+      "gloss_zh": "感觉",
+      "phonetic_uk": "ˈfiːlɪŋ",
+      "phonetic_us": "ˈfiːlɪŋ",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "lift",
+      "pos": "v.",
+      "gloss_zh": "使（情况）改善；使人更快乐",
+      "phonetic_uk": "lɪft",
+      "phonetic_us": "lɪft",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "lift sb's spirits",
+      "pos": "短语.",
+      "gloss_zh": "使某人开心起来",
+      "phonetic_uk": "—",
+      "phonetic_us": "—",
+      "page": 52,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "funny",
+      "pos": "adj.",
+      "gloss_zh": "使人发笑的，有趣的；滑稽的",
+      "phonetic_uk": "ˈfʌni",
+      "phonetic_us": "ˈfʌni",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "moment",
+      "pos": "n.",
+      "gloss_zh": "某一时刻",
+      "phonetic_uk": "ˈməʊmənt",
+      "phonetic_us": "ˈməʊmənt",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "youthful",
+      "pos": "adj.",
+      "gloss_zh": "年轻的",
+      "phonetic_uk": "ˈjuːθfʊl",
+      "phonetic_us": "ˈjuːθfʊl",
+      "page": 52,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "invite",
+      "pos": "v.",
+      "gloss_zh": "邀请",
+      "phonetic_uk": "ɪnˈvaɪt",
+      "phonetic_us": "ɪnˈvaɪt",
+      "page": 53,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "number",
+      "pos": "n.",
+      "gloss_zh": "数目；数量",
+      "phonetic_uk": "ˈnʌmbər",
+      "phonetic_us": "ˈnʌmbər",
+      "page": 53,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "a number of",
+      "pos": "短语.",
+      "gloss_zh": "一些",
+      "phonetic_uk": "—",
+      "phonetic_us": "—",
+      "page": 53,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "able",
+      "pos": "adj.",
+      "gloss_zh": "有能力做……的，会做……的",
+      "phonetic_uk": "'eɪbəl",
+      "phonetic_us": "'eɪbəl",
+      "page": 53,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "daily",
+      "pos": "adj.",
+      "gloss_zh": "每日的，每天的",
+      "phonetic_uk": "'deɪli",
+      "phonetic_us": "'deɪli",
+      "page": 55,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "daily life",
+      "pos": "短语.",
+      "gloss_zh": "日常生活",
+      "phonetic_uk": "—",
+      "phonetic_us": "—",
+      "page": 55,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "housework",
+      "pos": "n.",
+      "gloss_zh": "家务 (劳动)",
+      "phonetic_uk": "'haʊswɜːk",
+      "phonetic_us": "'haʊswɜːk",
+      "page": 55,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "unforgettable",
+      "pos": "adj.",
+      "gloss_zh": "难以忘怀的",
+      "phonetic_uk": "ˌʌnˈfɔːɡətəbl",
+      "phonetic_us": "ˌʌnˈfɔːɡətəbl",
+      "page": 55,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "insect",
+      "pos": "n.",
+      "gloss_zh": "昆虫",
+      "phonetic_uk": "'ɪnsekt",
+      "phonetic_us": "'ɪnsekt",
+      "page": 57,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "large",
+      "pos": "adj.",
+      "gloss_zh": "巨大的",
+      "phonetic_uk": "lɑːdʒ",
+      "phonetic_us": "lɑːdʒ",
+      "page": 57,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "mosquito",
+      "pos": "n.",
+      "gloss_zh": "蚊子",
+      "phonetic_uk": "məˈskiːtəʊ",
+      "phonetic_us": "məˈskiːtəʊ",
+      "page": 57,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "set",
+      "pos": "v.",
+      "gloss_zh": "确立",
+      "phonetic_uk": "set",
+      "phonetic_us": "set",
+      "page": 58,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "interest",
+      "pos": "n.",
+      "gloss_zh": "兴趣",
+      "phonetic_uk": "'ɪntrɪst",
+      "phonetic_us": "'ɪntrɪst",
+      "page": 59,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "butterfly",
+      "pos": "n.",
+      "gloss_zh": "蝴蝶",
+      "phonetic_uk": "'bʌtəflaɪ",
+      "phonetic_us": "'bʌtəflaɪ",
+      "page": 59,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "prince",
+      "pos": "n.",
+      "gloss_zh": "王子",
+      "phonetic_uk": "prɪns",
+      "phonetic_us": "prɪns",
+      "page": 59,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "monster",
+      "pos": "n.",
+      "gloss_zh": "妖怪；怪兽，怪物",
+      "phonetic_uk": "'mɒnstər",
+      "phonetic_us": "'mɒnstər",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "notice",
+      "pos": "v.",
+      "gloss_zh": "看到；听到；感觉到；注意到",
+      "phonetic_uk": "'nəʊtɪs",
+      "phonetic_us": "'nəʊtɪs",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "form",
+      "pos": "n.",
+      "gloss_zh": "形式，方式",
+      "phonetic_uk": "fɔːm",
+      "phonetic_us": "fɔːm",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "social",
+      "pos": "adj.",
+      "gloss_zh": "社交的",
+      "phonetic_uk": "'səʊʃəl",
+      "phonetic_us": "'səʊʃəl",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "screen",
+      "pos": "n.",
+      "gloss_zh": "屏幕",
+      "phonetic_uk": "skriːn",
+      "phonetic_us": "skriːn",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "couch",
+      "pos": "n.",
+      "gloss_zh": "长沙发",
+      "phonetic_uk": "kaʊtʃ",
+      "phonetic_us": "kaʊtʃ",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "couch potato",
+      "pos": "短语.",
+      "gloss_zh": "老泡在电视机前的人",
+      "phonetic_uk": "—",
+      "phonetic_us": "—",
+      "page": 61,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "sore",
+      "pos": "adj.",
+      "gloss_zh": "疼痛的；酸痛的",
+      "phonetic_uk": "sɔː",
+      "phonetic_us": "sɔː",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "neck",
+      "pos": "n.",
+      "gloss_zh": "颈，脖子",
+      "phonetic_uk": "nek",
+      "phonetic_us": "nek",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "deaf",
+      "pos": "adj.",
+      "gloss_zh": "耳聋的，失聪的",
+      "phonetic_uk": "def",
+      "phonetic_us": "def",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "be deaf to sth",
+      "pos": "短语.",
+      "gloss_zh": "不愿听某事，不肯听取某事",
+      "phonetic_uk": "—",
+      "phonetic_us": "—",
+      "page": 61,
+      "is_phrase": true,
+      "accept_forms": []
+    },
+    {
+      "lemma": "balanced",
+      "pos": "adj.",
+      "gloss_zh": "均衡的",
+      "phonetic_uk": "ˈbælənst",
+      "phonetic_us": "ˈbælənst",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "jog",
+      "pos": "v.",
+      "gloss_zh": "慢跑",
+      "phonetic_uk": "dʒɒɡ",
+      "phonetic_us": "dʒɒɡ",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "fresh",
+      "pos": "adj.",
+      "gloss_zh": "新鲜的",
+      "phonetic_uk": "freʃ",
+      "phonetic_us": "freʃ",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "tennis",
+      "pos": "n.",
+      "gloss_zh": "网球（运动）",
+      "phonetic_uk": "ˈtenɪs",
+      "phonetic_us": "ˈtenɪs",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "hike",
+      "pos": "v.",
+      "gloss_zh": "（在……）徒步旅行，远足",
+      "phonetic_uk": "haɪk",
+      "phonetic_us": "haɪk",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    },
+    {
+      "lemma": "ours",
+      "pos": "pron.",
+      "gloss_zh": "（属于）我们的",
+      "phonetic_uk": "aʊəz",
+      "phonetic_us": "aʊəz",
+      "page": 61,
+      "is_phrase": false,
+      "accept_forms": []
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title_en": "The Strange Prince",
+  "title_zh": "奇怪的王子",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Detective Orpheus stepped into the mysterious manor, his sharp eyes sweeping across every shadow.",
+      "zh": "侦探俄耳甫斯走进神秘庄园,锐利的目光扫过每一个角落。"
+    },
+    {
+      "id": "s02",
+      "en": "He noticed a strange prince sitting alone in a dark corner, looking dull and lifeless.",
+      "zh": "他注意到一个奇怪的王子独自坐在黑暗的角落里,看起来呆滞而无生气。"
+    },
+    {
+      "id": "s03",
+      "en": "\"Are you alright?\" Orpheus asked, but the prince seemed deaf to all words and warnings.",
+      "zh": "\"你还好吗?\"俄耳甫斯问道,但王子似乎对所有话语和警告都充耳不闻。"
+    },
+    {
+      "id": "s04",
+      "en": "At that moment, a terrifying monster emerged from the walls, its red eyes glowing in the darkness.",
+      "zh": "就在那一刻,一个可怕的怪物从墙壁中钻了出来,红色的眼睛在黑暗中闪烁着。"
+    },
+    {
+      "id": "s05",
+      "en": "Magician Serveran appeared from the shadows, shouting, \"This danger is ours to face together!\"",
+      "zh": "魔术师瑟维ran从阴影中出现,喊道:\"这场危险是我们必须一起面对的!\""
+    },
+    {
+      "id": "s06",
+      "en": "Orpheus drew his weapon and stepped in front of the dull prince without hesitation.",
+      "zh": "俄耳甫斯拔出武器,毫不犹豫地站到了那个呆滞的王子面前。"
+    },
+    {
+      "id": "s07",
+      "en": "The prince finally lifted his head, his eyes flickering with a spark of curiosity for the first time.",
+      "zh": "王子终于抬起头,眼睛里第一次闪烁出好奇的光芒。"
+    },
+    {
+      "id": "s08",
+      "en": "That night became an unforgettable mystery, leaving everyone wondering about the prince's secret.",
+      "zh": "那一夜成为了一个难以忘怀的谜团,让每个人都对这个王子的秘密感到好奇。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "manor-mystery",
+    "theme_name_zh": "奇怪的王子",
+    "theme_name_en": "The Strange Prince",
+    "is_review": false,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-30T15:04:37.846227+00:00",
+    "regeneration_count": 0,
+    "coverage": {
+      "total": 8,
+      "covered": 8,
+      "missing": []
+    }
+  },
+  "schema_version": 1
+}

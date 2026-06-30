@@ -1,0 +1,69 @@
+{
+  "title_en": "The Mysterious Manor",
+  "title_zh": "神秘庄园",
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "Emma Woods stood before the large manor gates, watching the sunset paint the sky orange.",
+      "zh": "艾玛·伍兹站在大庄园门前,看着日落把天空染成橙色。"
+    },
+    {
+      "id": "s02",
+      "en": "Detective Orpheus paced nearby, his youthful steps hiding a sharp and restless mind.",
+      "zh": "侦探奥菲斯在附近踱步,他年轻的步伐下隐藏着敏锐而不安分的头脑。"
+    },
+    {
+      "id": "s03",
+      "en": "Who owns this place? Emma wondered silently, her eyes scanning the towering walls that seemed to invite exploration.",
+      "zh": "这是谁的地方?艾玛默默想着,她的目光扫过似乎在邀请探索的高耸墙壁。"
+    },
+    {
+      "id": "s04",
+      "en": "A number of villagers told them the manor had been abandoned for decades.",
+      "zh": "一些村民告诉他们,这座庄园已经被遗弃了几十年。"
+    },
+    {
+      "id": "s05",
+      "en": "The solar lights flickered on one by one, and Orpheus spotted a strange tool half-buried in dirt.",
+      "zh": "太阳能灯一个接一个地闪烁起来,奥菲斯发现了一个半埋在泥土里的奇怪工具。"
+    },
+    {
+      "id": "s06",
+      "en": "This might be our first real clue, he thought, crouching down to examine it.",
+      "zh": "这可能是我们第一个真正的线索,他想着,蹲下身子检查它。"
+    },
+    {
+      "id": "s07",
+      "en": "Emma shivered as the wind picked up, and shadows stretched long across the ground.",
+      "zh": "风大了起来,艾玛打了个寒颤,阴影在地面上拉得很长。"
+    },
+    {
+      "id": "s08",
+      "en": "Serveran stepped forward with a warning. We should not be deaf to the risks here, he said quietly.",
+      "zh": "瑟维兰走上前提出警告。我们不应该对这里的风险充耳不闻,他轻声说道。"
+    },
+    {
+      "id": "s09",
+      "en": "But Orpheus refused to leave. Perhaps tonight might finally give us answers, he insisted.",
+      "zh": "但奥菲斯拒绝离开。也许今晚终于能给我们答案,他坚持道。"
+    }
+  ],
+  "_meta": {
+    "theme_id": "review",
+    "theme_name_zh": "在庄园门口",
+    "theme_name_en": "At the Manor Gates",
+    "is_review": true,
+    "vocab_sha256": "",
+    "generated_at": "2026-06-30T15:05:50.285495+00:00",
+    "regeneration_count": 2,
+    "coverage": {
+      "total": 10,
+      "covered": 8,
+      "missing": [
+        "funny",
+        "be deaf to sth"
+      ]
+    }
+  },
+  "schema_version": 1
+}
