@@ -74,6 +74,87 @@
       --hero-stat-bg: rgba(255,255,255,0.25);
       --hero-stat-text: #f0f5fa;
     }
+    /* ===== Unit02 主题（accent 色与封面场景色调对齐） ===== */
+    body.theme-marathon {
+      --bg: #fef3e8;
+      --bg-gradient: linear-gradient(135deg, #fbbf24 0%, #d97706 50%, #92400e 100%);
+      --bg-card: #fffaf2;
+      --text: #3a2a1a;
+      --subtle: #8a7560;
+      --accent: #d97706;
+      --accent-dark: #92400e;
+      --highlight: #fde68a;
+      --border: #fcd34d;
+      --hero-text: #fff8e8;
+      --hero-text-shadow: 0 2px 8px rgba(60,30,10,0.35);
+      --hero-deco: rgba(255,255,255,0.15);
+      --hero-stat-bg: rgba(255,255,255,0.22);
+      --hero-stat-text: #fff8e8;
+    }
+    body.theme-ocean {
+      --bg: #e8f5f7;
+      --bg-gradient: linear-gradient(135deg, #67e8f9 0%, #06b6d4 50%, #0e7490 100%);
+      --bg-card: #f5fbfc;
+      --text: #0c2a32;
+      --subtle: #5a7a82;
+      --accent: #0891b2;
+      --accent-dark: #0e7490;
+      --highlight: #cffafe;
+      --border: #a5e8f1;
+      --hero-text: #f0fdfa;
+      --hero-text-shadow: 0 2px 8px rgba(10,40,50,0.35);
+      --hero-deco: rgba(255,255,255,0.2);
+      --hero-stat-bg: rgba(255,255,255,0.25);
+      --hero-stat-text: #f0fdfa;
+    }
+    body.theme-choice {
+      --bg: #eef0fa;
+      --bg-gradient: linear-gradient(135deg, #818cf8 0%, #6366f1 50%, #4338ca 100%);
+      --bg-card: #f5f6fc;
+      --text: #1e1b4b;
+      --subtle: #6b6b95;
+      --accent: #6366f1;
+      --accent-dark: #4338ca;
+      --highlight: #c7d2fe;
+      --border: #a5b4fc;
+      --hero-text: #f5f3ff;
+      --hero-text-shadow: 0 2px 8px rgba(30,20,80,0.35);
+      --hero-deco: rgba(255,255,255,0.18);
+      --hero-stat-bg: rgba(255,255,255,0.25);
+      --hero-stat-text: #f5f3ff;
+    }
+    body.theme-encouragement {
+      --bg: #fef2f4;
+      --bg-gradient: linear-gradient(135deg, #fda4af 0%, #f43f5e 50%, #be123c 100%);
+      --bg-card: #fff5f6;
+      --text: #4c0519;
+      --subtle: #8a6a72;
+      --accent: #e11d48;
+      --accent-dark: #be123c;
+      --highlight: #fecdd3;
+      --border: #fda4af;
+      --hero-text: #fff1f2;
+      --hero-text-shadow: 0 2px 8px rgba(80,10,30,0.35);
+      --hero-deco: rgba(255,255,255,0.2);
+      --hero-stat-bg: rgba(255,255,255,0.25);
+      --hero-stat-text: #fff1f2;
+    }
+    body.theme-review {
+      --bg: #fef3ea;
+      --bg-gradient: linear-gradient(135deg, #fdba74 0%, #f97316 50%, #c2410c 100%);
+      --bg-card: #fff7f0;
+      --text: #431407;
+      --subtle: #8a6a5a;
+      --accent: #ea580c;
+      --accent-dark: #c2410c;
+      --highlight: #fed7aa;
+      --border: #fdba74;
+      --hero-text: #fff7ed;
+      --hero-text-shadow: 0 2px 8px rgba(80,30,5,0.35);
+      --hero-deco: rgba(255,255,255,0.2);
+      --hero-stat-bg: rgba(255,255,255,0.25);
+      --hero-stat-text: #fff7ed;
+    }
 
     body {
       font-family: "Nunito", "PingFang SC", system-ui, -apple-system, sans-serif;
@@ -92,6 +173,7 @@
       position: relative;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      min-height: 240px;
     }
     .hero::before, .hero::after {
       content: '';
@@ -107,6 +189,18 @@
     .hero::after {
       width: 120px; height: 120px;
       bottom: -40px; left: 30%;
+    }
+    /* 当 .hero 带 has-cover 类：cover 图作 bg，加暗色 overlay 保文字可读 */
+    .hero.has-cover {
+      background-size: cover;
+      background-position: center 30%;
+      background-repeat: no-repeat;
+    }
+    .hero.has-cover::before {
+      width: auto; height: auto;
+      top: 0; right: 0;
+      border-radius: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.2) 35%, rgba(0,0,0,0.55) 100%);
     }
     .back-link {
       display: inline-block;
@@ -456,7 +550,7 @@
   </style>
 </head>
 <body class="theme-winter">
-  <header class="hero">
+  <header class="hero has-cover" style="background-image: url('../../../../data/covers/harsh-winter.png');">
     <a class="back-link" href="index.html">← 返回单元列表</a>
     <div class="hero-content">
       <div class="hero-title-en">A Strange Winter Day</div>
