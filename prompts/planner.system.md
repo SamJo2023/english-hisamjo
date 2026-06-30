@@ -79,6 +79,7 @@ Return ONLY a single JSON object. No prose, no markdown fences, no comments.
       "name_zh": "主题中文标题",
       "scene_description": "1-2 sentences describing the story setting and main characters.",
       "character_focus": ["Character 1", "Character 2"],
+      "theme_class": "kebab-class",
       "word_list": ["word1", "word2", "..."]
     }
   ],
@@ -88,10 +89,25 @@ Return ONLY a single JSON object. No prose, no markdown fences, no comments.
     "name_zh": "在庄园",
     "scene_description": "A short closing scene that weaves together any leftover words.",
     "character_focus": ["Orpheus"],
+    "theme_class": "kebab-class",
     "word_list": ["leftover1", "leftover2", "..."]
   }
 }
 ```
+
+**`theme_class` 字段 (新增于 2026-06-30)：** 驱动 story.html 里的 CSS 主题色（body.theme-*）和 accent 色。必须与 templates/story.html 里已定义的 .theme-{class} 块一一对应。已知可用的 class（项目维护，未来新 class 在 story.html 加即可）：
+
+- `chocolate` — 暖棕红（chocolate/bar 主题）
+- `barber` — 青绿（理发/服务）
+- `mystery` — 深靛蓝（侦探/神秘）
+- `winter` — 冷蓝（寒冷/冰雪）
+- `marathon` — 金/琥珀（运动/胜利）
+- `ocean` — 青蓝（海洋）
+- `choice` — 紫靛（抉择/内心）
+- `encouragement` — 玫红/粉（温暖/支持）
+- `review` — 橙/落日（收尾/黄昏）
+
+为新主题选最接近的；若都不合适，跟用户商量在 story.html 新增一个 class（提供 hex 配色：--bg / --bg-gradient / --accent / --text 等）。
 
 # Rules (HARD CONSTRAINTS — your output will be auto-validated)
 

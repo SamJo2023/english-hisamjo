@@ -62,26 +62,33 @@ def tokenize_with_vocab(en_text: str, vocab_lemmas: set[str]) -> str:
     return pattern.sub(repl, en_text)
 
 
-def render_story_html(story: dict, vocab: list[dict], audio_base: str) -> str:
-    """渲染单个故事的 HTML 页面。"""
+def render_story_html(story: dict, vocab: list[dict], audio_base: str, theme: dict | None = None) -> str:
+    """渲染单个故事的 HTML 页面。
+
+    Args:
+        story: story_*.json 内容（含 _meta）
+        vocab: 该故事的目标词列表
+        audio_base: 相对 audio 目录的路径
+        theme: 来自 planner 的 theme dict（含 theme_class 等）。review 故事传
+            planner["review"]，普通故事传 planner["themes"][i]。若为 None
+            （如 Unit01 旧数据），fallback 到 hardcoded mapping。
+    """
     template = (TEMPLATES_DIR / "story.html").read_text(encoding="utf-8")
     vocab_lemmas = set(w["lemma"].lower() for w in vocab)
 
     # 主题 → CSS class 映射
+    # 优先从 planner 的 theme.theme_class 字段读（Unit02+ 的新约定）；
+    # 缺省时 fallback 到 hardcoded dict（Unit01 兼容，planner.json 没这字段）
     theme_id = story["_meta"]["theme_id"]
-    theme_class = {
-        # Unit01
-        "magical-chocolate-factory": "chocolate",
-        "kind-barber": "barber",
-        "orpheus-mystery": "mystery",
-        "harsh-winter": "winter",
-        # Unit02
-        "the-great-marathon": "marathon",
-        "ocean-survival": "ocean",
-        "a-difficult-choice": "choice",
-        "words-of-encouragement": "encouragement",
-        "review": "review",
-    }.get(theme_id, "chocolate")
+    theme_class = (theme or {}).get("theme_class")
+    if not theme_class:
+        theme_class = {
+            # Unit01 legacy（2026-06-30 之前的 planner.json 没 theme_class 字段）
+            "magical-chocolate-factory": "chocolate",
+            "kind-barber": "barber",
+            "orpheus-mystery": "mystery",
+            "harsh-winter": "winter",
+        }.get(theme_id, "chocolate")
 
     # Cover 图作 hero 背景（如果存在）。路径相对 story_*.html 4 层 ../ 到项目根
     cover_path = REPO_ROOT / "data" / "covers" / f"{theme_id}.png"
@@ -290,12 +297,13 @@ def render_unit(unit_path: str, force: bool):
     for sf in story_files:
         story = read_json(sf)
         theme_id = story["_meta"]["theme_id"]
-        # 取该 story 的词
+        # 取该 story 的词 + 完整 theme dict（render_story_html 需要 theme_class）
         if story["_meta"].get("is_review"):
-            word_lemmas = set(planner.get("review", {}).get("word_list", []))
+            theme_dict = planner.get("review", {})
+            word_lemmas = set(theme_dict.get("word_list", []))
         else:
-            theme = next((t for t in planner["themes"] if t["id"] == theme_id), None)
-            word_lemmas = set(theme["word_list"]) if theme else set()
+            theme_dict = next((t for t in planner["themes"] if t["id"] == theme_id), None) or {}
+            word_lemmas = set(theme_dict.get("word_list", []))
         words = [w for w in vocab["words"] if w["lemma"].lower() in {l.lower() for l in word_lemmas}]
 
         out_html = unit_dir / f"{sf.stem}.html"
@@ -305,7 +313,7 @@ def render_unit(unit_path: str, force: bool):
 
         # audio base 路径：相对 HTML 文件位置
         audio_base = f"audio/{theme_id}/"
-        html = render_story_html(story, words, audio_base)
+        html = render_story_html(story, words, audio_base, theme=theme_dict)
         out_html.write_text(html, encoding="utf-8")
         print(f"  ✓ {out_html.name}（{len(words)} 词，{len(story['sentences'])} 句）")
 

@@ -24,7 +24,8 @@
         "match",
         "medal",
         "the finishing line"
-      ]
+      ],
+      "theme_class": "marathon"
     },
     {
       "id": "ocean-survival",
@@ -47,7 +48,8 @@
         "surfer",
         "surfing",
         "wave"
-      ]
+      ],
+      "theme_class": "ocean"
     },
     {
       "id": "a-difficult-choice",
@@ -70,7 +72,8 @@
         "lose",
         "neither",
         "record"
-      ]
+      ],
+      "theme_class": "choice"
     },
     {
       "id": "words-of-encouragement",
@@ -93,7 +96,8 @@
         "success",
         "victory",
         "wonder"
-      ]
+      ],
+      "theme_class": "encouragement"
     }
   ],
   "review": {
@@ -112,7 +116,8 @@
       "score",
       "shall",
       "thanks to"
-    ]
+    ],
+    "theme_class": "review"
   },
   "schema_version": 1
 }

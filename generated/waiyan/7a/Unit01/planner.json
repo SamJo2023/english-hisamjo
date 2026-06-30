@@ -27,7 +27,8 @@
         "receive",
         "rich",
         "town"
-      ]
+      ],
+      "theme_class": "chocolate"
     },
     {
       "id": "kind-barber",
@@ -51,7 +52,8 @@
         "smart",
         "voice",
         "wig"
-      ]
+      ],
+      "theme_class": "barber"
     },
     {
       "id": "orpheus-mystery",
@@ -77,7 +79,8 @@
         "touch",
         "wave",
         "himself"
-      ]
+      ],
+      "theme_class": "mystery"
     }
   ],
   "review": {
@@ -95,7 +98,8 @@
       "princess",
       "sunless",
       "watery"
-    ]
+    ],
+    "theme_class": "winter"
   },
   "schema_version": 1
 }
