@@ -233,7 +233,7 @@ def render_root_index_html(units: list[dict]) -> str:
     # 找每个单元的 plan + 第 1 个主题的 cover
     cards = []
     for u in units:
-        planner_path = REPO_ROOT / "generated" / u["path"] / "planner.json"
+        planner_path = REPO_ROOT / u["path"] / "planner.json"
         cover_url = "data/covers/magical-chocolate-factory.png"  # 兜底
         if planner_path.exists():
             try:
