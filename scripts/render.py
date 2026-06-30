@@ -70,11 +70,28 @@ def render_story_html(story: dict, vocab: list[dict], audio_base: str) -> str:
     # 主题 → CSS class 映射
     theme_id = story["_meta"]["theme_id"]
     theme_class = {
+        # Unit01
         "magical-chocolate-factory": "chocolate",
         "kind-barber": "barber",
         "orpheus-mystery": "mystery",
         "harsh-winter": "winter",
+        # Unit02
+        "the-great-marathon": "marathon",
+        "ocean-survival": "ocean",
+        "a-difficult-choice": "choice",
+        "words-of-encouragement": "encouragement",
+        "review": "review",
     }.get(theme_id, "chocolate")
+
+    # Cover 图作 hero 背景（如果存在）。路径相对 story_*.html 4 层 ../ 到项目根
+    cover_path = REPO_ROOT / "data" / "covers" / f"{theme_id}.png"
+    if cover_path.exists():
+        # HTML attribute 中 URL 里的单引号要转义。这里用 CSS url()，外层用双引号
+        hero_class = " has-cover"
+        hero_style = f' style="background-image: url(\'../../../../data/covers/{theme_id}.png\');"'
+    else:
+        hero_class = ""
+        hero_style = ""
 
     # 渲染三种 view
     en_html = render_section(story, vocab_lemmas, mode="en")
@@ -88,6 +105,8 @@ def render_story_html(story: dict, vocab: list[dict], audio_base: str) -> str:
     word_audio_base = "../../../../data/word_audio/"
     return (template
         .replace("{{THEME_CLASS}}", theme_class)
+        .replace("{{HERO_CLASS}}", hero_class)
+        .replace("{{HERO_STYLE_ATTR}}", hero_style)
         .replace("{{TITLE_EN}}", story.get("title_en", ""))
         .replace("{{TITLE_ZH}}", story.get("title_zh", ""))
         .replace("{{UNIT_TITLE_ZH}}", story["_meta"].get("theme_name_zh", ""))
