@@ -6,6 +6,8 @@
 
 依赖：`mmx` CLI 已安装（C:\\nvm4w\\nodejs\\mmx）。
 环境变量：无需（M2.7 是默认 model）。
+
+瞬时失败（exit 10 / timeout）由 mmx_retry.run_with_retry 自动处理。
 """
 import json
 import re
@@ -14,6 +16,8 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+
+from mmx_retry import run_with_retry
 
 # 强制 UTF-8 输出
 for _stream in (sys.stdout, sys.stderr):
@@ -66,22 +70,9 @@ MMX_BIN_LABEL = _MMX_INVOKE[1]
 
 
 def _run_mmx(args: list[str], timeout: int = 300) -> str:
-    """执行 mmx 子进程，返回 stdout。"""
+    """执行 mmx 子进程，返回 stdout。瞬时失败自动重试。"""
     cmd = _MMX_INVOKE[0] + args
-    result = subprocess.run(
-        cmd,
-        capture_output=True,
-        text=True,
-        timeout=timeout,
-        encoding="utf-8",
-        errors="replace",
-    )
-    if result.returncode != 0:
-        raise RuntimeError(
-            f"mmx 调用失败（exit {result.returncode}）\n"
-            f"  cmd: {' '.join(cmd[:5])}...\n"
-            f"  stderr: {result.stderr.strip()[:500]}"
-        )
+    result = run_with_retry(cmd, timeout=timeout)
     return result.stdout
 
 

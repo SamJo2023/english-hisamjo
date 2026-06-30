@@ -2,11 +2,13 @@
 
 调用方式：mmx speech synthesize --text "..." --out file.mp3
 绕过 .cmd 包装器，直接调 node + mjs（避免 `#` 注释符问题）。
+自动 retry 瞬时失败（exit 10 / timeout）由 mmx_retry.run_with_retry 提供。
 """
 import shutil
-import subprocess
 import sys
 from pathlib import Path
+
+from mmx_retry import run_with_retry
 
 # UTF-8 输出
 for _stream in (sys.stdout, sys.stderr):
@@ -66,7 +68,7 @@ def synthesize(
         speed: 语速倍数（0.5-2.0，默认 1.0）
         sample_rate: 采样率 Hz（默认 32000）
         bitrate: 比特率 bps（默认 128000）
-        timeout: 单次调用超时秒数
+        timeout: 单次调用超时秒数（每次 attempt；总时间 ≈ timeout × 3）
 
     Returns:
         输出文件路径
@@ -86,18 +88,6 @@ def synthesize(
         "--out", str(out),
     ]
 
-    result = subprocess.run(
-        _MMX_INVOKE[0] + args,
-        capture_output=True,
-        text=True,
-        timeout=timeout,
-        encoding="utf-8",
-        errors="replace",
-    )
-    if result.returncode != 0:
-        raise RuntimeError(
-            f"mmx speech synthesize 失败（exit {result.returncode}）\n"
-            f"  text: {text[:80]}\n"
-            f"  stderr: {result.stderr.strip()[:300]}"
-        )
+    run_with_retry(_MMX_INVOKE[0] + args, timeout=timeout)
     return out
+
