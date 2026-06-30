@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""为 Unit03 补 3 张缺失的封面图。
+"""为 Unit03 补 4 张封面图。
 
 Unit03 4 个主题：the-chinese-restaurant / cooking-class / food-and-health / review。
-review.png 已存在（与 Unit02 review 共用），所以只生成前 3 张。
+- 前 3 张是新主题（之前不存在）
+- unit03-review.png 是 Unit03 review 专属封面（与 Unit02 review.png 区分）
+  通过 planner.review.cover_id 字段指向。Unit02 review 保持 review.png。
 
 风格沿用 scripts/generate_covers.py 的 Identity V 3D anime 风格。
 """
@@ -66,6 +68,25 @@ COVERS = [
             "dramatic shadows, painterly, no text, no watermark"
         ),
     },
+    {
+        # theme_class: review (Unit03 specific: 在庄园 / At the Manor — Orpheus at dining table)
+        # Filename 是 unit03-review（不是 review），因为 Unit02 已经占了 review.png。
+        # render.py 会从 planner 的 review.cover_id 字段读这个值。
+        "id": "unit03-review",
+        "prompt": (
+            "Identity V game style soft 3D anime illustration. "
+            "A young male detective with a long dark coat (Detective Orpheus) "
+            "sitting alone at a long wooden dining table in a grand old manor. "
+            "An evening menu sits on a plate in front of him, a half-eaten "
+            "bowl of soup and a sandwich. Warm candlelight glowing from a "
+            "silver candelabra, a fireplace in the background, large gothic "
+            "windows showing dusk outside. Reflections of Chinese lanterns "
+            "and Western pastries subtly visible in the polished silverware. "
+            "Warm amber, soft gold, and gentle crimson tones, contemplative "
+            "and peaceful atmosphere, dramatic shadows, painterly, "
+            "no text, no watermark"
+        ),
+    },
 ]
 
 
@@ -88,7 +109,7 @@ def main():
         except Exception as e:
             print(f"  ✗ {cov['id']} ERROR: {e}")
             sys.exit(1)
-    print(f"\n✅ 完成。共生成 {len(COVERS)} 张 Unit03 封面。")
+    print(f"\n✅ 完成。共 {len(COVERS)} 张 Unit03 封面（已存在的会 skip）。")
 
 
 if __name__ == "__main__":

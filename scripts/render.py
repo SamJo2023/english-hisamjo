@@ -91,11 +91,15 @@ def render_story_html(story: dict, vocab: list[dict], audio_base: str, theme: di
         }.get(theme_id, "chocolate")
 
     # Cover 图作 hero 背景（如果存在）。路径相对 story_*.html 4 层 ../ 到项目根
-    cover_path = REPO_ROOT / "data" / "covers" / f"{theme_id}.png"
+    # cover_id 优先于 theme_id（planner 可指定 cover_id override，给同 theme_id 的
+    # 不同单元用不同封面，例如 Unit02 review 和 Unit03 review 都 theme_id="review"，
+    # 但 Unit03 通过 review.cover_id="unit03-review" 指向专属封面）
+    cover_id = (theme or {}).get("cover_id") or theme_id
+    cover_path = REPO_ROOT / "data" / "covers" / f"{cover_id}.png"
     if cover_path.exists():
         # HTML attribute 中 URL 里的单引号要转义。这里用 CSS url()，外层用双引号
         hero_class = " has-cover"
-        hero_style = f' style="background-image: url(\'../../../../data/covers/{theme_id}.png\');"'
+        hero_style = f' style="background-image: url(\'../../../../data/covers/{cover_id}.png\');"'
     else:
         hero_class = ""
         hero_style = ""
@@ -177,9 +181,15 @@ def render_unit_index_html(unit_path: str, vocab: dict, planner: dict, story_fil
         story = read_json(sf)
         is_review = story["_meta"].get("is_review", False)
         theme_id = story["_meta"]["theme_id"]
+        # 取 theme dict（用于 cover_id override）
+        if is_review:
+            theme_dict = planner.get("review", {})
+        else:
+            theme_dict = next((t for t in planner.get("themes", []) if t.get("id") == theme_id), {}) or {}
+        cover_id = theme_dict.get("cover_id") or theme_id
         tag_class = "review" if is_review else ""
         tag_text = "复习 REVIEW" if is_review else "主题 STORY"
-        cover = cover_base + theme_id + ".png"
+        cover = cover_base + cover_id + ".png"
         n_unused = len(story["_meta"].get("coverage", {}).get("missing", []))
         # 根绝对路径：避免 cleanUrls + 浏览器相对解析导致目录丢失
         story_href = f"/generated/{unit_path}/{sf.stem}.html"
