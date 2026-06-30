@@ -1,6 +1,6 @@
 # CLAUDE.md — 开发规范
 
-本项目的 10 条工作原则。每次 Claude Code 在此项目工作时必须遵守。
+本项目的 11 条工作原则。每次 Claude Code 在此项目工作时必须遵守。
 
 ## 开发原则
 
@@ -14,10 +14,11 @@
 8. **所有功能必须可测试**。每个脚本都能独立运行（`python scripts/xxx.py`），有可观察的输出（打印进度、生成文件、退出码 0/1）。
 9. **所有配置放 `config/` 或单元的 vocab.json**。不在代码里硬编码 voice、API key、阈值。环境变量用 `os.environ.get()`，不写死。
 10. **任何重大设计变更必须先输出设计方案，再等待用户确认**。包括但不限于：改数据 schema、改技术栈、改 MVP 范围、新增 V2 功能、调整部署架构。
+11. **vocab.json 字段必须用课本实际值**。`unit_title_zh / unit_title_en` = 课本章节标题（**不是**自己编的描述或翻译）；`grade` = 7a/7b 按学生实际用的册（**不要**从章节号推断，也不要把上/下册与 a/b 弄混）。render.py 会原样把这两个值显示在 hero 上，写错会直接暴露给用户。**新建单元后第一件事是 review 渲染结果**。Unit01 正确示范：`unit_title_zh="Unit 1 幸福的秘密"`, `unit_title_en="The secrets of happiness"`, `grade="7b"`（初一下）。Unit02 反例（2026-06-30 修过）：曾写成 `"Module 2 跑步与坚持"` / `"Running and Perseverance"` / `grade="7a"`——标题编了，册别猜了，全错。
 
 ## 与 Framework.md 的关系
 
-本文件的前身来自 `Framework.md` 中"Claude Code 工作规范"小节。本项目**仅采纳这 10 条原则**，不采纳 Framework.md 的 React+FastAPI+SQLite 架构。
+本文件的前身来自 `Framework.md` 中"Claude Code 工作规范"小节。本项目**仅采纳这 11 条原则**，不采纳 Framework.md 的 React+FastAPI+SQLite 架构。
 
 ## 实施纪律
 
