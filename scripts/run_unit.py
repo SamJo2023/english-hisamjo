@@ -5,11 +5,12 @@
 
   1. import_vocab           （仅 --vocab 模式：md/csv → units/<...>/vocab.json）
   2. plan_curriculum        （vocab.json → planner.json，按主题分组）
-  3. generate_story         （4 个 story_*.json + story_*.html）
-  4. generate_tts           （audio/<theme>/sent-*.mp3）
-  5. generate_word_audio    （data/word_audio/<lemma>.mp3，点击查词弹窗用）
-  6. render <unit>          （单元 index.html）
-  7. render（无参）          （根 index.html）
+  3. check_covers           （planner.json → 检查 data/covers/ 是否齐全；缺则 exit 1）
+  4. generate_story         （4 个 story_*.json + story_*.html）
+  5. generate_tts           （audio/<theme>/sent-*.mp3）
+  6. generate_word_audio    （data/word_audio/<lemma>.mp3，点击查词弹窗用）
+  7. render <unit>          （单元 index.html）
+  8. render（无参）          （根 index.html）
 
 用法：
   # 模式 A：词表文件 + 单元路径（首次添加新单元）
@@ -39,6 +40,7 @@ SCRIPTS = REPO_ROOT / "scripts"
 # args_builder 接受 unit_path 和 force flag，返回参数列表
 STEPS = [
     ("plan_curriculum",   lambda u, f: ["plan_curriculum.py", u] + (["--force"] if f else [])),
+    ("check_covers",      lambda u, f: ["check_covers.py", u]),  # 检测是幂等的，无 --force 概念
     ("generate_story",    lambda u, f: ["generate_story.py", u, "--all"] + (["--force"] if f else [])),
     ("generate_tts",      lambda u, f: ["generate_tts.py", u] + (["--force"] if f else [])),
     ("generate_word_audio", lambda u, f: ["generate_word_audio.py", u] + (["--force"] if f else [])),
@@ -47,12 +49,13 @@ STEPS = [
 
 # Stop-after 关键字 → 步骤名（包含该步骤）。None = 跑完
 STOP_AFTER = {
-    "plan":     "plan_curriculum",
-    "story":    "generate_story",
-    "tts":      "generate_tts",
+    "plan":       "plan_curriculum",
+    "check_covers": "check_covers",
+    "story":      "generate_story",
+    "tts":        "generate_tts",
     "word_audio": "generate_word_audio",
-    "render":   "render_unit",
-    "all":      None,  # 跑完
+    "render":     "render_unit",
+    "all":        None,  # 跑完
 }
 
 
